@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway Game Dynamic - Sorteador de Perguntas</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700;1,400&family=Inter:wght@400;600;800&family=Rubik+Glitch&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        conwayBg: '#161026',
+                        conwayMint: '#99FFE6',
+                        conwayYellow: '#FDFF99',
+                        conwaySalmon: '#FF99A1',
+                        conwayPink: '#F20548',
+                        conwayPurple: '#583DF2',
+                        conwaySoftPurple: '#A399FF',
+                        conwayCard: '#1f1738'
+                    },
+                    fontFamily: {
+                        glitch: ['"Rubik Glitch"', 'monospace'],
+                        title: ['"EB Garamond"', 'serif'],
+                        heading: ['"Space Grotesk"', 'sans-serif'],
+                        sans: ['"Inter"', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'retro-pink': '4px 4px 0px 0px #F20548',
+                        'retro-purple': '4px 4px 0px 0px #583DF2',
+                        'retro-mint': '4px 4px 0px 0px #99FFE6',
+                        'retro-salmon': '6px 6px 0px 0px #FF99A1',
+                        'retro-yellow': '4px 4px 0px 0px #FDFF99',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #161026;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            background-image: 
+                radial-gradient(rgba(88, 61, 242, 0.15) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #161026;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #583DF2;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F20548;
+        }
+
+        .glitch-text {
+            font-family: 'Rubik Glitch', monospace;
+            text-shadow: 2px 2px #F20548, -2px -2px #583DF2;
+        }
+
+        .retro-card {
+            border: 2px solid #583DF2;
+            transition: all 0.2s ease;
+        }
+        .retro-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 6px 6px 0px 0px #583DF2;
+        }
+
+        /* Roulette Reel Animation for Sorteio */
+        @keyframes rouletteSpin {
+            0% { transform: translateY(0); filter: blur(0px); }
+            50% { filter: blur(2px); }
+            100% { transform: translateY(-50%); filter: blur(0px); }
+        }
+        .spinning {
+            animation: rouletteSpin 0.15s linear infinite;
+        }
+
+        /* Pulse modal border */
+        .modal-border-pulse {
+            animation: borderPulse 2s infinite alternate;
+        }
+        @keyframes borderPulse {
+            0% { border-color: #FF99A1; box-shadow: 0 0 15px rgba(255, 153, 161, 0.3); }
+            100% { border-color: #A399FF; box-shadow: 0 0 25px rgba(163, 153, 255, 0.5); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-conwayPink selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="border-b-4 border-conwayPurple bg-conwayBg/90 backdrop-blur-md sticky top-0 z-30">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-conwayPurple flex items-center justify-center border-2 border-conwayMint shadow-retro-pink">
+                    <i class="fa-solid fa-gamepad text-conwayYellow text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="glitch-text text-3xl tracking-widest text-white leading-none">CONWAY</h1>
+                    <p class="text-xs font-heading uppercase text-conwayMint tracking-widest mt-1">Dinâmica de Perguntas & Games</p>
+                </div>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="flex items-center gap-3">
+                <button onclick="openJsonModal()" class="px-4 py-2 bg-conwayBg border-2 border-conwayMint text-conwayMint hover:bg-conwayMint hover:text-conwayBg font-heading font-bold text-sm tracking-wide transition-all shadow-retro-mint flex items-center gap-2 rounded">
+                    <i class="fa-solid fa-code"></i> JSON Data
+                </button>
+                <button onclick="resetAllQuestions()" class="px-4 py-2 bg-conwayBg border-2 border-conwayPink text-conwayPink hover:bg-conwayPink hover:text-white font-heading font-bold text-sm tracking-wide transition-all shadow-retro-pink flex items-center gap-2 rounded">
+                    <i class="fa-solid fa-rotate-right"></i> Reiniciar Sorteios
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full">
+
+        <!-- Banner Intro -->
+        <div class="mb-8 p-6 bg-conwayCard border-2 border-conwaySoftPurple shadow-retro-purple rounded-lg relative overflow-hidden">
+            <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div>
+                    <h2 class="font-title text-3xl md:text-4xl text-conwayYellow font-bold mb-2">Painel de Dinâmica</h2>
+                    <p class="text-gray-300 text-sm md:text-base max-w-2xl">
+                        Selecione a dificuldade desejada nas abas abaixo e clique em <span class="text-conwayMint font-bold">"Sortear Pergunta"</span>. As perguntas sorteadas serão desativadas automaticamente.
+                    </p>
+                </div>
+                <div class="flex gap-4 items-center bg-conwayBg/80 px-4 py-3 border border-conwaySoftPurple/40 rounded">
+                    <div class="text-center">
+                        <span class="block text-xs uppercase text-gray-400 font-heading">Total Perguntas</span>
+                        <span id="stat-total" class="text-2xl font-bold font-heading text-conwayMint">0</span>
+                    </div>
+                    <div class="h-8 w-px bg-conwaySoftPurple/30"></div>
+                    <div class="text-center">
+                        <span class="block text-xs uppercase text-gray-400 font-heading">Restantes</span>
+                        <span id="stat-remaining" class="text-2xl font-bold font-heading text-conwayYellow">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Difficulty Tabs -->
+        <div class="flex flex-wrap gap-2 border-b-2 border-conwayPurple pb-px mb-8">
+            <button id="tab-facil" onclick="switchTab('facil')" 
+                class="tab-btn px-6 py-3 font-heading font-bold text-base md:text-lg border-t-2 border-l-2 border-r-2 border-conwayPurple bg-conwayBg text-conwayMint hover:bg-conwayPurple/30 transition-all rounded-t-lg flex items-center gap-2">
+                <i class="fa-solid fa-seedling text-conwayMint"></i> Fácil
+                <span id="badge-facil" class="ml-2 text-xs bg-conwayMint text-conwayBg px-2 py-0.5 font-bold rounded-full">0</span>
+            </button>
+            
+            <button id="tab-media" onclick="switchTab('media')" 
+                class="tab-btn px-6 py-3 font-heading font-bold text-base md:text-lg border-t-2 border-l-2 border-r-2 border-conwayPurple bg-conwayBg text-conwaySoftPurple hover:bg-conwayPurple/30 transition-all rounded-t-lg flex items-center gap-2">
+                <i class="fa-solid fa-fire text-conwaySoftPurple"></i> Média
+                <span id="badge-media" class="ml-2 text-xs bg-conwaySoftPurple text-conwayBg px-2 py-0.5 font-bold rounded-full">0</span>
+            </button>
+            
+            <button id="tab-dificil" onclick="switchTab('dificil')" 
+                class="tab-btn px-6 py-3 font-heading font-bold text-base md:text-lg border-t-2 border-l-2 border-r-2 border-conwayPurple bg-conwayBg text-conwayPink hover:bg-conwayPurple/30 transition-all rounded-t-lg flex items-center gap-2">
+                <i class="fa-solid fa-skull text-conwayPink"></i> Difícil
+                <span id="badge-dificil" class="ml-2 text-xs bg-conwayPink text-white px-2 py-0.5 font-bold rounded-full">0</span>
+            </button>
+        </div>
+
+        <!-- Draw Section & Active Tab Content -->
+        <div class="bg-conwayCard border-2 border-conwayPurple p-6 md:p-10 shadow-retro-purple rounded-b-lg rounded-tr-lg mb-10">
+            
+            <!-- Tab Header & Draw Action Button -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 bg-conwayBg/60 p-6 border border-conwayPurple/40 rounded-lg">
+                <div>
+                    <span id="active-category-tag" class="inline-block px-3 py-1 bg-conwayMint text-conwayBg text-xs font-heading font-extrabold uppercase rounded mb-2">Categoria: Fácil</span>
+                    <h3 id="active-tab-title" class="text-2xl md:text-3xl font-title font-bold text-white">Perguntas Fáceis</h3>
+                    <p id="active-tab-desc" class="text-sm text-gray-300 mt-1">Conceitos fundamentais e questões de nível introdutório.</p>
+                </div>
+
+                <!-- Big Main Draw Button -->
+                <button id="btn-draw" onclick="drawQuestion()" 
+                    class="w-full md:w-auto px-8 py-4 bg-conwayPink text-white font-heading font-extrabold text-lg uppercase tracking-wider hover:bg-red-600 active:translate-y-1 transition-all shadow-retro-yellow hover:shadow-none border-2 border-conwayYellow flex items-center justify-center gap-3 rounded group">
+                    <i class="fa-solid fa-dice text-2xl group-hover:rotate-180 transition-transform duration-500 text-conwayYellow"></i>
+                    <span>Sortear Pergunta</span>
+                </button>
+            </div>
+
+            <!-- Questions Progress Grid for current tab -->
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="font-heading font-bold text-conwayYellow text-sm uppercase tracking-wider">
+                        <i class="fa-solid fa-list-check mr-2"></i> Status das Perguntas desta Categoria
+                    </h4>
+                    <span id="drawn-ratio" class="text-xs text-conwayMint font-mono font-bold">0 de 0 Sorteadas</span>
+                </div>
+
+                <!-- Dynamic Grid Container -->
+                <div id="questions-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t-2 border-conwayPurple bg-conwayBg py-6 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-glitch text-conwayPink text-base">CONWAY</span>
+                <span>— Grupo de Estudos de Jogos & Computação Gráfica</span>
+            </div>
+            <div>
+                <span>Identidade Visual: <strong class="text-conwayMint">TMP-PS-Conway-2026</strong></span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==================== QUESTION MODAL ==================== -->
+    <div id="modal-question" class="fixed inset-0 bg-conwayBg/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="modal-border-pulse bg-conwayCard border-4 max-w-2xl w-full rounded-xl p-6 md:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            
+            <!-- Close Button Top Right -->
+            <button onclick="closeQuestionModal()" class="absolute top-4 right-4 text-gray-400 hover:text-conwayPink text-xl w-10 h-10 flex items-center justify-center rounded-full bg-conwayBg border border-gray-700 transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Question Header Meta -->
+            <div class="flex items-center gap-3 mb-4">
+                <span id="modal-badge-diff" class="px-3 py-1 bg-conwayPurple text-white font-heading text-xs font-bold uppercase rounded-full">
+                    Fácil
+                </span>
+                <span id="modal-question-id" class="text-xs font-mono text-gray-400">
+                    ID: f1
+                </span>
+            </div>
+
+            <!-- Question Text -->
+            <h3 id="modal-question-text" class="font-title text-2xl md:text-3xl font-bold text-conwayYellow mb-6 leading-tight">
+                Pergunta aqui?
+            </h3>
+
+            <!-- Options (Alternativas) -->
+            <div id="modal-options-container" class="space-y-3 mb-6">
+                <!-- Buttons generated dynamically -->
+            </div>
+
+            <!-- Answer Feedback & Explanation Box -->
+            <div id="modal-feedback-box" class="hidden p-4 rounded-lg mb-6 border-2 transition-all">
+                <div class="flex items-start gap-3">
+                    <i id="modal-feedback-icon" class="text-2xl mt-0.5"></i>
+                    <div>
+                        <h4 id="modal-feedback-title" class="font-heading font-bold text-base mb-1"></h4>
+                        <p id="modal-feedback-text" class="text-sm text-gray-200 font-sans leading-relaxed"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer Actions -->
+            <div class="flex justify-end gap-3 border-t border-conwayPurple/40 pt-4">
+                <button onclick="closeQuestionModal()" class="px-6 py-2.5 bg-conwayPurple text-white hover:bg-opacity-90 font-heading font-bold text-sm tracking-wider uppercase border border-conwaySoftPurple rounded shadow-retro-pink transition-all">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== JSON EDITOR / IMPORT MODAL ==================== -->
+    <div id="modal-json" class="fixed inset-0 bg-conwayBg/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-conwayCard border-2 border-conwayMint max-w-3xl w-full rounded-xl p-6 md:p-8 shadow-retro-mint relative max-h-[90vh] flex flex-col">
+            
+            <div class="flex justify-between items-center mb-4 pb-3 border-b border-conwayMint/30">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-code text-conwayMint text-xl"></i>
+                    <h3 class="font-heading font-bold text-xl text-conwayYellow">Estrutura & Editor do JSON</h3>
+                </div>
+                <button onclick="closeJsonModal()" class="text-gray-400 hover:text-conwayPink text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <p class="text-xs text-gray-300 mb-4">
+                Você pode colar abaixo suas próprias perguntas seguindo o formato das categorias <code class="text-conwayMint">facil</code>, <code class="text-conwaySoftPurple">media</code> e <code class="text-conwayPink">dificil</code>.
+            </p>
+
+            <textarea id="json-textarea" class="w-full h-64 bg-conwayBg border border-conwayPurple p-3 text-xs font-mono text-conwayMint rounded focus:outline-none focus:border-conwayMint" spellcheck="false"></textarea>
+
+            <div id="json-error-msg" class="hidden text-xs text-conwayPink font-bold mt-2">
+                <i class="fa-solid fa-triangle-exclamation"></i> JSON Inválido. Verifique a sintaxe.
+            </div>
+
+            <div class="flex flex-wrap justify-between items-center gap-3 mt-6 pt-3 border-t border-conwayPurple/40">
+                <button onclick="loadSampleJson()" class="px-3 py-1.5 bg-conwayBg border border-conwaySoftPurple text-conwaySoftPurple hover:bg-conwaySoftPurple hover:text-conwayBg text-xs font-heading font-bold rounded">
+                    Carregar Exemplo
+                </button>
+
+                <div class="flex gap-2">
+                    <button onclick="closeJsonModal()" class="px-4 py-2 bg-gray-700 text-white text-xs font-heading font-bold rounded">
+                        Cancelar
+                    </button>
+                    <button onclick="saveCustomJson()" class="px-5 py-2 bg-conwayMint text-conwayBg hover:bg-opacity-90 text-xs font-heading font-extrabold rounded shadow-retro-purple">
+                        Salvar e Aplicar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        // Default Mock Question Database (TMP-PS-Conway Theme & Game Dev Dynamic)
+        const defaultQuizData = {
+            "facil": [
+                {
+                    "id": "f1",
+                    "pergunta": "Qual modelo de renderização 3D utiliza cubos tridimensionais similares a pixels?",
+                    "alternativas": ["Vector Art", "Voxel Art", "Low-Poly Mesh", "Ray Tracing"],
+                    "resposta_correta": 1,
+                    "explicacao": "Voxel (Volume Pixel) é a representação de um ponto num espaço tridimensional, esteticamente marcante na Conway."
+                },
+                {
+                    "id": "f2",
+                    "pergunta": "Qual destas linguagens é amplamente utilizada na engine Unity?",
+                    "alternativas": ["C#", "Python", "Lua", "GDScript"],
+                    "resposta_correta": 0,
+                    "explicacao": "C# é a linguagem padrão utilizada para scripts na Unity Engine."
+                },
+                {
+                    "id": "f3",
+                    "pergunta": "No modelo de cores RGB, qual cor resulta da combinação de Vermelho (Red) e Verde (Green) no valor máximo?",
+                    "alternativas": ["Azul", "Amarelo", "Magenta", "Ciano"],
+                    "resposta_correta": 1,
+                    "explicacao": "No sistema aditivo RGB, Vermelho (255) + Verde (255) forma o Amarelo."
+                },
+                {
+                    "id": "f4",
+                    "pergunta": "O que significa a sigla FPS no contexto de desempenho de um jogo?",
+                    "alternativas": ["First Person Shooter", "Frames Per Second", "Fast Processing Speed", "Final Render Stage"],
+                    "resposta_correta": 1,
+                    "explicacao": "Frames Per Second (Quadros por Segundo) mede a taxa de atualização visual."
+                }
+            ],
+            "media": [
+                {
+                    "id": "m1",
+                    "pergunta": "Quem foi o matemático britânico criador do 'Game of Life' que dá nome à Conway?",
+                    "alternativas": ["Alan Turing", "John Horton Conway", "Claude Shannon", "John von Neumann"],
+                    "resposta_correta": 1,
+                    "explicacao": "John Horton Conway desenvolveu o autômato celular 'Game of Life' em 1970."
+                },
+                {
+                    "id": "m2",
+                    "pergunta": "Na pipeline de computação gráfica, qual shader é responsável por manipular os vértices de um modelo 3D?",
+                    "alternativas": ["Fragment Shader", "Vertex Shader", "Pixel Shader", "Compute Shader"],
+                    "resposta_correta": 1,
+                    "explicacao": "O Vertex Shader processa individualmente as coordenadas de cada vértice na cena."
+                },
+                {
+                    "id": "m3",
+                    "pergunta": "Qual conceito da física de jogos trata da detecção de quando dois objetos se sobrepõem sem colisão rígida?",
+                    "alternativas": ["RigidBody", "Trigger Area", "Raycasting", "Kinematic Impulse"],
+                    "resposta_correta": 0,
+                    "explicacao": "Áreas do tipo Trigger disparam eventos de entrada e saída sem colisão física física (embora RigidBodies controlem a física)."
+                }
+            ],
+            "dificil": [
+                {
+                    "id": "d1",
+                    "pergunta": "Qual estrutura de dados espacial divide recursivamente o espaço 3D em oito octantes para otimizar busca de visibilidade?",
+                    "alternativas": ["Quadtree", "Octree", "BSP Tree", "BVH (Bounding Volume Hierarchy)"],
+                    "resposta_correta": 1,
+                    "explicacao": "Octrees dividem o espaço tridimensional em 8 partes cúbicas recursivamente."
+                },
+                {
+                    "id": "d2",
+                    "pergunta": "Em shaders HLSL/GLSL, qual produto vetorial resulta em um vetor perpendicular aos dois vetores de entrada?",
+                    "alternativas": ["Dot Product (Produto Escalar)", "Cross Product (Produto Vetorial)", "Normalize", "Reflect"],
+                    "resposta_correta": 1,
+                    "explicacao": "O Cross Product (A × B) produz um vetor ortogonal a ambos os vetores A e B."
+                },
+                {
+                    "id": "d3",
+                    "pergunta": "Qual das regras abaixo PERTENCE às regras padrão de nascimento do autômato Game of Life de Conway?",
+                    "alternativas": ["Célula morta com exatamente 3 vizinhos vivos renasce", "Célula viva com 4 vizinhos sobrevive", "Célula viva com 1 vizinho renasce", "Célula morta com 2 vizinhos renasce"],
+                    "resposta_correta": 0,
+                    "explicacao": "A regra de nascimento padrão B3/S23 indica que uma célula morta ganha vida se tiver exatamente 3 vizinhos."
+                }
+            ]
+        };
+
+        // App State Management
+        let quizDatabase = {};
+        let drawnQuestionIds = new Set();
+        let currentTab = 'facil';
+        let activeModalQuestion = null;
+        let optionSelected = false;
+
+        // Sound Synthesis (Web Audio API for retro audio effects without external files)
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        let audioCtx = null;
+
+        function playSound(type) {
+            try {
+                if (!audioCtx) audioCtx = new AudioCtx();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                const now = audioCtx.currentTime;
+
+                if (type === 'click') {
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(400, now);
+                    osc.frequency.exponentialRampToValueAtTime(800, now + 0.05);
+                    gain.gain.setValueAtTime(0.1, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.05);
+                    osc.start(now);
+                    osc.stop(now + 0.05);
+                } else if (type === 'correct') {
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(523.25, now); // C5
+                    osc.frequency.setValueAtTime(659.25, now + 0.08); // E5
+                    osc.frequency.setValueAtTime(783.99, now + 0.16); // G5
+                    gain.gain.setValueAtTime(0.15, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.3);
+                    osc.start(now);
+                    osc.stop(now + 0.3);
+                } else if (type === 'wrong') {
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(180, now);
+                    osc.frequency.linearRampToValueAtTime(110, now + 0.2);
+                    gain.gain.setValueAtTime(0.2, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.2);
+                    osc.start(now);
+                    osc.stop(now + 0.2);
+                } else if (type === 'draw') {
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(300, now);
+                    osc.frequency.exponentialRampToValueAtTime(900, now + 0.25);
+                    gain.gain.setValueAtTime(0.15, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.25);
+                    osc.start(now);
+                    osc.stop(now + 0.25);
+                }
+            } catch (e) {
+                // Ignore audio restriction errors
+            }
+        }
+
+        // Initialize App
+        window.addEventListener('DOMContentLoaded', () => {
+            loadDatabaseFromStorage();
+            switchTab('facil');
+            updateOverallStats();
+        });
+
+        function loadDatabaseFromStorage() {
+            const saved = localStorage.getItem('conway_quiz_db');
+            if (saved) {
+                try {
+                    quizDatabase = JSON.parse(saved);
+                } catch(e) {
+                    quizDatabase = JSON.parse(JSON.stringify(defaultQuizData));
+                }
+            } else {
+                quizDatabase = JSON.parse(JSON.stringify(defaultQuizData));
+            }
+
+            const savedDrawn = localStorage.getItem('conway_drawn_ids');
+            if (savedDrawn) {
+                try {
+                    drawnQuestionIds = new Set(JSON.parse(savedDrawn));
+                } catch(e) {
+                    drawnQuestionIds = new Set();
+                }
+            }
+        }
+
+        function saveStateToStorage() {
+            localStorage.setItem('conway_quiz_db', JSON.stringify(quizDatabase));
+            localStorage.setItem('conway_drawn_ids', JSON.stringify(Array.from(drawnQuestionIds)));
+        }
+
+        // Tab Switching Logic
+        function switchTab(difficulty) {
+            playSound('click');
+            currentTab = difficulty;
+
+            const tabs = ['facil', 'media', 'dificil'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`tab-${t}`);
+                if (t === difficulty) {
+                    btn.classList.add('bg-conwayPurple', 'text-white', 'border-b-transparent');
+                    btn.classList.remove('bg-conwayBg');
+                } else {
+                    btn.classList.remove('bg-conwayPurple', 'text-white', 'border-b-transparent');
+                    btn.classList.add('bg-conwayBg');
+                }
+            });
+
+            // Update Tab Info Header
+            const tagEl = document.getElementById('active-category-tag');
+            const titleEl = document.getElementById('active-tab-title');
+            const descEl = document.getElementById('active-tab-desc');
+
+            if (difficulty === 'facil') {
+                tagEl.className = "inline-block px-3 py-1 bg-conwayMint text-conwayBg text-xs font-heading font-extrabold uppercase rounded mb-2";
+                tagEl.innerText = "Categoria: Fácil";
+                titleEl.innerText = "Perguntas Fáceis";
+                descEl.innerText = "Perguntas de nível inicial para aquecimento e dinamismo rápido.";
+            } else if (difficulty === 'media') {
+                tagEl.className = "inline-block px-3 py-1 bg-conwaySoftPurple text-conwayBg text-xs font-heading font-extrabold uppercase rounded mb-2";
+                tagEl.innerText = "Categoria: Média";
+                titleEl.innerText = "Perguntas Médias";
+                descEl.innerText = "Desafios intermediários que exigem maior atenção dos participantes.";
+            } else {
+                tagEl.className = "inline-block px-3 py-1 bg-conwayPink text-white text-xs font-heading font-extrabold uppercase rounded mb-2";
+                tagEl.innerText = "Categoria: Difícil";
+                titleEl.innerText = "Perguntas Difíceis";
+                descEl.innerText = "Questões avançadas com alto grau de complexidade técnico-conceitual.";
+            }
+
+            renderQuestionsGrid();
+            updateOverallStats();
+        }
+
+        // Render Cards Grid for Active Category
+        function renderQuestionsGrid() {
+            const container = document.getElementById('questions-grid');
+            container.innerHTML = '';
+
+            const list = quizDatabase[currentTab] || [];
+            let drawnCount = 0;
+
+            list.forEach((q, index) => {
+                const isDrawn = drawnQuestionIds.has(q.id);
+                if (isDrawn) drawnCount++;
+
+                const card = document.createElement('div');
+                card.className = `p-4 rounded-lg border-2 transition-all flex flex-col justify-between ${
+                    isDrawn 
+                        ? 'bg-conwayBg/40 border-gray-800 opacity-60' 
+                        : 'bg-conwayBg border-conwayPurple/60 hover:border-conwayMint shadow-retro-purple'
+                }`;
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs font-mono text-gray-400">#${index + 1} - ${q.id}</span>
+                            <span class="px-2 py-0.5 text-[10px] font-heading font-bold uppercase rounded ${
+                                isDrawn ? 'bg-gray-800 text-gray-400 border border-gray-700' : 'bg-conwayMint/20 text-conwayMint border border-conwayMint/40'
+                            }">
+                                ${isDrawn ? '<i class="fa-solid fa-check mr-1"></i>Sorteada' : 'Disponível'}
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-200 font-sans line-clamp-2">${q.pergunta}</p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-conwayPurple/20 flex justify-between items-center text-[11px] text-gray-400">
+                        <span>${q.alternativas ? q.alternativas.length : 0} opções</span>
+                        ${isDrawn ? '<span class="text-conwayPink font-bold">Desativada</span>' : '<span class="text-conwayMint">Pronta</span>'}
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+
+            document.getElementById('drawn-ratio').innerText = `${drawnCount} de ${list.length} Sorteadas`;
+            
+            // Badges update
+            ['facil', 'media', 'dificil'].forEach(cat => {
+                const catList = quizDatabase[cat] || [];
+                const catDrawn = catList.filter(q => drawnQuestionIds.has(q.id)).length;
+                const rem = catList.length - catDrawn;
+                document.getElementById(`badge-${cat}`).innerText = `${rem}`;
+            });
+        }
+
+        // Overall Stats Counter Update
+        function updateOverallStats() {
+            let total = 0;
+            let drawn = 0;
+
+            Object.keys(quizDatabase).forEach(cat => {
+                const list = quizDatabase[cat] || [];
+                total += list.length;
+                drawn += list.filter(q => drawnQuestionIds.has(q.id)).length;
+            });
+
+            document.getElementById('stat-total').innerText = total;
+            document.getElementById('stat-remaining').innerText = total - drawn;
+        }
+
+        // DRAW QUESTION LOGIC
+        function drawQuestion() {
+            const list = quizDatabase[currentTab] || [];
+            const available = list.filter(q => !drawnQuestionIds.has(q.id));
+
+            if (available.length === 0) {
+                showNotificationModal(
+                    "Todas as perguntas dessa categoria foram sorteadas!",
+                    "Você já sorteou todas as questões disponíveis nesta aba. Alterne para outra categoria ou reinicie o progresso no botão superior."
+                );
+                return;
+            }
+
+            playSound('draw');
+            const btn = document.getElementById('btn-draw');
+            btn.disabled = true;
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            // Quick Roulette visual feedback
+            let count = 0;
+            const interval = setInterval(() => {
+                btn.querySelector('span').innerText = "Sorteando...";
+                count++;
+                if (count > 6) {
+                    clearInterval(interval);
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-75', 'cursor-not-allowed');
+                    btn.querySelector('span').innerText = "Sortear Pergunta";
+
+                    // Select random question
+                    const randomIndex = Math.floor(Math.random() * available.length);
+                    const selected = available[randomIndex];
+
+                    // Mark as drawn & save
+                    drawnQuestionIds.add(selected.id);
+                    saveStateToStorage();
+
+                    // Update UI
+                    renderQuestionsGrid();
+                    updateOverallStats();
+
+                    // Show question in Modal
+                    openQuestionModal(selected);
+                }
+            }, 80);
+        }
+
+        // Open Question Interactive Modal
+        function openQuestionModal(question) {
+            activeModalQuestion = question;
+            optionSelected = false;
+
+            document.getElementById('modal-question-text').innerText = question.pergunta;
+            document.getElementById('modal-question-id').innerText = `ID: ${question.id}`;
+
+            const badgeDiff = document.getElementById('modal-badge-diff');
+            if (currentTab === 'facil') {
+                badgeDiff.innerText = "Fácil";
+                badgeDiff.className = "px-3 py-1 bg-conwayMint text-conwayBg font-heading text-xs font-bold uppercase rounded-full";
+            } else if (currentTab === 'media') {
+                badgeDiff.innerText = "Média";
+                badgeDiff.className = "px-3 py-1 bg-conwaySoftPurple text-conwayBg font-heading text-xs font-bold uppercase rounded-full";
+            } else {
+                badgeDiff.innerText = "Difícil";
+                badgeDiff.className = "px-3 py-1 bg-conwayPink text-white font-heading text-xs font-bold uppercase rounded-full";
+            }
+
+            // Render Options
+            const container = document.getElementById('modal-options-container');
+            container.innerHTML = '';
+
+            const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+            question.alternativas.forEach((optText, idx) => {
+                const btn = document.createElement('button');
+                btn.className = `option-btn w-full p-4 rounded-lg border-2 border-conwayPurple bg-conwayBg text-left font-sans text-sm md:text-base transition-all flex items-center gap-3 hover:border-conwayYellow hover:bg-conwayPurple/20 group`;
+                btn.setAttribute('data-index', idx);
+                btn.onclick = () => handleOptionSelect(idx);
+
+                btn.innerHTML = `
+                    <span class="w-8 h-8 rounded-md bg-conwayPurple text-white font-heading font-bold flex items-center justify-center shrink-0 border border-conwaySoftPurple group-hover:bg-conwayYellow group-hover:text-conwayBg transition-colors">
+                        ${letters[idx] || idx + 1}
+                    </span>
+                    <span class="text-white font-medium leading-relaxed">${optText}</span>
+                `;
+                container.appendChild(btn);
+            });
+
+            // Hide feedback box
+            document.getElementById('modal-feedback-box').className = "hidden p-4 rounded-lg mb-6 border-2 transition-all";
+
+            // Display Modal
+            document.getElementById('modal-question').classList.remove('hidden');
+        }
+
+        // Handle Option Click
+        function handleOptionSelect(selectedIndex) {
+            if (optionSelected || !activeModalQuestion) return;
+            optionSelected = true;
+
+            const correctIndex = activeModalQuestion.resposta_correta;
+            const options = document.querySelectorAll('.option-btn');
+            
+            const feedbackBox = document.getElementById('modal-feedback-box');
+            const feedbackIcon = document.getElementById('modal-feedback-icon');
+            const feedbackTitle = document.getElementById('modal-feedback-title');
+            const feedbackText = document.getElementById('modal-feedback-text');
+
+            options.forEach((btn, idx) => {
+                btn.disabled = true;
+                btn.classList.remove('hover:border-conwayYellow', 'hover:bg-conwayPurple/20');
+
+                if (idx === correctIndex) {
+                    // Highlight correct answer always in Green/Mint
+                    btn.className = "w-full p-4 rounded-lg border-2 border-conwayMint bg-conwayMint/20 text-white font-sans text-sm md:text-base flex items-center gap-3 shadow-retro-mint";
+                    const badge = btn.querySelector('span');
+                    badge.className = "w-8 h-8 rounded-md bg-conwayMint text-conwayBg font-heading font-extrabold flex items-center justify-center shrink-0";
+                } else if (idx === selectedIndex && selectedIndex !== correctIndex) {
+                    // Highlight wrong answer in Pink/Red
+                    btn.className = "w-full p-4 rounded-lg border-2 border-conwayPink bg-conwayPink/20 text-white font-sans text-sm md:text-base flex items-center gap-3 shadow-retro-pink opacity-90";
+                    const badge = btn.querySelector('span');
+                    badge.className = "w-8 h-8 rounded-md bg-conwayPink text-white font-heading font-extrabold flex items-center justify-center shrink-0";
+                } else {
+                    btn.classList.add('opacity-40');
+                }
+            });
+
+            // Feedback Message
+            feedbackBox.classList.remove('hidden');
+            if (selectedIndex === correctIndex) {
+                playSound('correct');
+                feedbackBox.className = "p-4 rounded-lg mb-6 border-2 border-conwayMint bg-conwayMint/10 text-conwayMint";
+                feedbackIcon.className = "fa-solid fa-circle-check text-2xl text-conwayMint";
+                feedbackTitle.innerText = "Resposta Correta!";
+            } else {
+                playSound('wrong');
+                feedbackBox.className = "p-4 rounded-lg mb-6 border-2 border-conwayPink bg-conwayPink/10 text-conwayPink";
+                feedbackIcon.className = "fa-solid fa-circle-xmark text-2xl text-conwayPink";
+                feedbackTitle.innerText = "Resposta Incorreta!";
+            }
+
+            feedbackText.innerText = activeModalQuestion.explicacao || "Pergunta desativada para os próximos sorteios.";
+        }
+
+        function closeQuestionModal() {
+            playSound('click');
+            document.getElementById('modal-question').classList.add('hidden');
+            activeModalQuestion = null;
+        }
+
+        // Notification Modal helper
+        function showNotificationModal(title, message) {
+            playSound('wrong');
+            const alertModal = document.createElement('div');
+            alertModal.className = "fixed inset-0 bg-conwayBg/90 backdrop-blur-md z-50 flex items-center justify-center p-4";
+            alertModal.innerHTML = `
+                <div class="bg-conwayCard border-2 border-conwayYellow p-6 max-w-md w-full rounded-lg shadow-retro-yellow text-center">
+                    <i class="fa-solid fa-circle-info text-4xl text-conwayYellow mb-3"></i>
+                    <h3 class="font-heading font-bold text-xl text-white mb-2">${title}</h3>
+                    <p class="text-sm text-gray-300 mb-6">${message}</p>
+                    <button onclick="this.closest('.fixed').remove()" class="px-6 py-2 bg-conwayYellow text-conwayBg font-heading font-bold text-sm uppercase rounded shadow-retro-pink">
+                        Entendido
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(alertModal);
+        }
+
+        // JSON EDITOR MODAL LOGIC
+        function openJsonModal() {
+            playSound('click');
+            const textarea = document.getElementById('json-textarea');
+            textarea.value = JSON.stringify(quizDatabase, null, 2);
+            document.getElementById('json-error-msg').classList.add('hidden');
+            document.getElementById('modal-json').classList.remove('hidden');
+        }
+
+        function closeJsonModal() {
+            playSound('click');
+            document.getElementById('modal-json').classList.add('hidden');
+        }
+
+        function loadSampleJson() {
+            playSound('click');
+            document.getElementById('json-textarea').value = JSON.stringify(defaultQuizData, null, 2);
+            document.getElementById('json-error-msg').classList.add('hidden');
+        }
+
+        function saveCustomJson() {
+            const raw = document.getElementById('json-textarea').value;
+            const errorEl = document.getElementById('json-error-msg');
+
+            try {
+                const parsed = JSON.parse(raw);
+                
+                // Simple structure validation
+                if (!parsed.facil || !parsed.media || !parsed.dificil) {
+                    throw new Error("O JSON precisa conter as chaves 'facil', 'media' e 'dificil'.");
+                }
+
+                quizDatabase = parsed;
+                saveStateToStorage();
+                
+                errorEl.classList.add('hidden');
+                closeJsonModal();
+                
+                renderQuestionsGrid();
+                updateOverallStats();
+                playSound('correct');
+
+            } catch (err) {
+                playSound('wrong');
+                errorEl.innerText = `Erro no JSON: ${err.message}`;
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        // Reset progress
+        function resetAllQuestions() {
+            if (confirm("Tem certeza que deseja reiniciar o progresso e reativar todas as perguntas?")) {
+                playSound('click');
+                drawnQuestionIds.clear();
+                saveStateToStorage();
+                renderQuestionsGrid();
+                updateOverallStats();
+            }
+        }
+    </script>
+</body>
+</html>
