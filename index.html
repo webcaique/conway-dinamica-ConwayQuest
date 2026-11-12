@@ -300,7 +300,7 @@
             </div>
 
             <p class="text-xs text-gray-300 mb-4">
-                Você pode colar abaixo suas próprias perguntas seguindo o formato das categorias <code class="text-conwayMint">facil</code>, <code class="text-conwaySoftPurple">media</code> e <code class="text-conwayPink">dificil</code>.
+                Dados carregados de <code class="text-conwayYellow">perguntas.json</code>. Você também pode editar ou colar novas perguntas seguindo as categorias <code class="text-conwayMint">facil</code>, <code class="text-conwaySoftPurple">media</code> e <code class="text-conwayPink">dificil</code>.
             </p>
 
             <textarea id="json-textarea" class="w-full h-64 bg-conwayBg border border-conwayPurple p-3 text-xs font-mono text-conwayMint rounded focus:outline-none focus:border-conwayMint" spellcheck="false"></textarea>
@@ -310,8 +310,8 @@
             </div>
 
             <div class="flex flex-wrap justify-between items-center gap-3 mt-6 pt-3 border-t border-conwayPurple/40">
-                <button onclick="loadSampleJson()" class="px-3 py-1.5 bg-conwayBg border border-conwaySoftPurple text-conwaySoftPurple hover:bg-conwaySoftPurple hover:text-conwayBg text-xs font-heading font-bold rounded">
-                    Carregar Exemplo
+                <button onclick="reloadFromJsonFile()" class="px-3 py-1.5 bg-conwayBg border border-conwaySoftPurple text-conwaySoftPurple hover:bg-conwaySoftPurple hover:text-conwayBg text-xs font-heading font-bold rounded">
+                    Recarregar perguntas.json
                 </button>
 
                 <div class="flex gap-2">
@@ -329,8 +329,8 @@
 
     <!-- ==================== JAVASCRIPT LOGIC ==================== -->
     <script>
-        // Default Mock Question Database (TMP-PS-Conway Theme & Game Dev Dynamic)
-        const defaultQuizData = {
+        // Fallback Mock Question Database (usado apenas se o perguntas.json não puder ser carregado)
+        const fallbackQuizData = {
             "facil": [
                 {
                     "id": "f1",
@@ -338,75 +338,10 @@
                     "alternativas": ["Vector Art", "Voxel Art", "Low-Poly Mesh", "Ray Tracing"],
                     "resposta_correta": 1,
                     "explicacao": "Voxel (Volume Pixel) é a representação de um ponto num espaço tridimensional, esteticamente marcante na Conway."
-                },
-                {
-                    "id": "f2",
-                    "pergunta": "Qual destas linguagens é amplamente utilizada na engine Unity?",
-                    "alternativas": ["C#", "Python", "Lua", "GDScript"],
-                    "resposta_correta": 0,
-                    "explicacao": "C# é a linguagem padrão utilizada para scripts na Unity Engine."
-                },
-                {
-                    "id": "f3",
-                    "pergunta": "No modelo de cores RGB, qual cor resulta da combinação de Vermelho (Red) e Verde (Green) no valor máximo?",
-                    "alternativas": ["Azul", "Amarelo", "Magenta", "Ciano"],
-                    "resposta_correta": 1,
-                    "explicacao": "No sistema aditivo RGB, Vermelho (255) + Verde (255) forma o Amarelo."
-                },
-                {
-                    "id": "f4",
-                    "pergunta": "O que significa a sigla FPS no contexto de desempenho de um jogo?",
-                    "alternativas": ["First Person Shooter", "Frames Per Second", "Fast Processing Speed", "Final Render Stage"],
-                    "resposta_correta": 1,
-                    "explicacao": "Frames Per Second (Quadros por Segundo) mede a taxa de atualização visual."
                 }
             ],
-            "media": [
-                {
-                    "id": "m1",
-                    "pergunta": "Quem foi o matemático britânico criador do 'Game of Life' que dá nome à Conway?",
-                    "alternativas": ["Alan Turing", "John Horton Conway", "Claude Shannon", "John von Neumann"],
-                    "resposta_correta": 1,
-                    "explicacao": "John Horton Conway desenvolveu o autômato celular 'Game of Life' em 1970."
-                },
-                {
-                    "id": "m2",
-                    "pergunta": "Na pipeline de computação gráfica, qual shader é responsável por manipular os vértices de um modelo 3D?",
-                    "alternativas": ["Fragment Shader", "Vertex Shader", "Pixel Shader", "Compute Shader"],
-                    "resposta_correta": 1,
-                    "explicacao": "O Vertex Shader processa individualmente as coordenadas de cada vértice na cena."
-                },
-                {
-                    "id": "m3",
-                    "pergunta": "Qual conceito da física de jogos trata da detecção de quando dois objetos se sobrepõem sem colisão rígida?",
-                    "alternativas": ["RigidBody", "Trigger Area", "Raycasting", "Kinematic Impulse"],
-                    "resposta_correta": 0,
-                    "explicacao": "Áreas do tipo Trigger disparam eventos de entrada e saída sem colisão física física (embora RigidBodies controlem a física)."
-                }
-            ],
-            "dificil": [
-                {
-                    "id": "d1",
-                    "pergunta": "Qual estrutura de dados espacial divide recursivamente o espaço 3D em oito octantes para otimizar busca de visibilidade?",
-                    "alternativas": ["Quadtree", "Octree", "BSP Tree", "BVH (Bounding Volume Hierarchy)"],
-                    "resposta_correta": 1,
-                    "explicacao": "Octrees dividem o espaço tridimensional em 8 partes cúbicas recursivamente."
-                },
-                {
-                    "id": "d2",
-                    "pergunta": "Em shaders HLSL/GLSL, qual produto vetorial resulta em um vetor perpendicular aos dois vetores de entrada?",
-                    "alternativas": ["Dot Product (Produto Escalar)", "Cross Product (Produto Vetorial)", "Normalize", "Reflect"],
-                    "resposta_correta": 1,
-                    "explicacao": "O Cross Product (A × B) produz um vetor ortogonal a ambos os vetores A e B."
-                },
-                {
-                    "id": "d3",
-                    "pergunta": "Qual das regras abaixo PERTENCE às regras padrão de nascimento do autômato Game of Life de Conway?",
-                    "alternativas": ["Célula morta com exatamente 3 vizinhos vivos renasce", "Célula viva com 4 vizinhos sobrevive", "Célula viva com 1 vizinho renasce", "Célula morta com 2 vizinhos renasce"],
-                    "resposta_correta": 0,
-                    "explicacao": "A regra de nascimento padrão B3/S23 indica que uma célula morta ganha vida se tiver exatamente 3 vizinhos."
-                }
-            ]
+            "media": [],
+            "dificil": []
         };
 
         // App State Management
@@ -470,42 +405,76 @@
         }
 
         // Initialize App
-        window.addEventListener('DOMContentLoaded', () => {
-            loadDatabaseFromStorage();
-            switchTab('facil');
+        window.addEventListener('DOMContentLoaded', async () => {
+            await loadDatabase();
+            switchTab('facil', false);
             updateOverallStats();
         });
 
-        function loadDatabaseFromStorage() {
+        // Busca o arquivo perguntas.json
+        async function fetchPerguntasJson() {
+            const response = await fetch('./perguntas.json', { cache: 'no-store' });
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            if (!data.facil || !data.media || !data.dificil) {
+                throw new Error("O arquivo perguntas.json precisa conter as chaves 'facil', 'media' e 'dificil'.");
+            }
+            return data;
+        }
+
+        async function loadDatabase() {
+            const isCustom = localStorage.getItem('conway_is_custom_db') === 'true';
             const saved = localStorage.getItem('conway_quiz_db');
-            if (saved) {
+
+            if (isCustom && saved) {
                 try {
                     quizDatabase = JSON.parse(saved);
-                } catch(e) {
-                    quizDatabase = JSON.parse(JSON.stringify(defaultQuizData));
+                } catch (e) {
+                    quizDatabase = await loadFromExternalJson();
                 }
             } else {
-                quizDatabase = JSON.parse(JSON.stringify(defaultQuizData));
+                quizDatabase = await loadFromExternalJson();
             }
 
             const savedDrawn = localStorage.getItem('conway_drawn_ids');
             if (savedDrawn) {
                 try {
                     drawnQuestionIds = new Set(JSON.parse(savedDrawn));
-                } catch(e) {
+                } catch (e) {
                     drawnQuestionIds = new Set();
                 }
             }
         }
 
-        function saveStateToStorage() {
+        async function loadFromExternalJson() {
+            try {
+                const data = await fetchPerguntasJson();
+                localStorage.setItem('conway_quiz_db', JSON.stringify(data));
+                localStorage.removeItem('conway_is_custom_db');
+                return data;
+            } catch (error) {
+                console.error("Erro ao carregar perguntas.json:", error);
+                showNotificationModal(
+                    "Aviso ao carregar perguntas.json",
+                    "Não foi possível ler o arquivo 'perguntas.json'. Verifique se o arquivo está na mesma pasta do HTML e se você está rodando via servidor local (ex: Live Server)."
+                );
+                return JSON.parse(JSON.stringify(fallbackQuizData));
+            }
+        }
+
+        function saveStateToStorage(isCustom = false) {
             localStorage.setItem('conway_quiz_db', JSON.stringify(quizDatabase));
             localStorage.setItem('conway_drawn_ids', JSON.stringify(Array.from(drawnQuestionIds)));
+            if (isCustom) {
+                localStorage.setItem('conway_is_custom_db', 'true');
+            }
         }
 
         // Tab Switching Logic
-        function switchTab(difficulty) {
-            playSound('click');
+        function switchTab(difficulty, withSound = true) {
+            if (withSound) playSound('click');
             currentTab = difficulty;
 
             const tabs = ['facil', 'media', 'dificil'];
@@ -793,10 +762,19 @@
             document.getElementById('modal-json').classList.add('hidden');
         }
 
-        function loadSampleJson() {
+        async function reloadFromJsonFile() {
             playSound('click');
-            document.getElementById('json-textarea').value = JSON.stringify(defaultQuizData, null, 2);
-            document.getElementById('json-error-msg').classList.add('hidden');
+            const errorEl = document.getElementById('json-error-msg');
+            try {
+                const data = await fetchPerguntasJson();
+                document.getElementById('json-textarea').value = JSON.stringify(data, null, 2);
+                localStorage.removeItem('conway_is_custom_db');
+                errorEl.classList.add('hidden');
+            } catch (err) {
+                playSound('wrong');
+                errorEl.innerText = `Erro ao buscar perguntas.json: ${err.message}`;
+                errorEl.classList.remove('hidden');
+            }
         }
 
         function saveCustomJson() {
@@ -812,7 +790,7 @@
                 }
 
                 quizDatabase = parsed;
-                saveStateToStorage();
+                saveStateToStorage(true);
                 
                 errorEl.classList.add('hidden');
                 closeJsonModal();
