@@ -1,0 +1,2101 @@
+{
+  "facil": [
+    {
+      "id": "f1",
+      "pergunta": "Qual é o nome do encanador mais famoso dos videogames, mascote da Nintendo?",
+      "alternativas": ["Mario", "Luigi", "Wario", "Toad", "Yoshi"],
+      "resposta_correta": 0,
+      "explicacao": "Mario estreou em 1981 em Donkey Kong, ainda com o nome Jumpman, e virou o maior mascote da história dos games."
+    },
+    {
+      "id": "f2",
+      "pergunta": "Qual é o nome do irmão de Mario que usa roupas verdes?",
+      "alternativas": ["Luigi", "Waluigi", "Toadsworth", "Bowser Jr.", "Daisy"],
+      "resposta_correta": 0,
+      "explicacao": "Luigi aparece pela primeira vez em Mario Bros. (1983) e ganhou seu próprio jogo de caça-fantasmas em Luigi's Mansion."
+    },
+    {
+      "id": "f3",
+      "pergunta": "Qual é a cor do Sonic, o ouriço?",
+      "alternativas": ["Azul", "Vermelho", "Verde", "Amarelo", "Roxo"],
+      "resposta_correta": 0,
+      "explicacao": "Sonic foi criado pela Sega em 1991 para ser o rival do Mario, com cor azul igual à do logotipo da empresa."
+    },
+    {
+      "id": "f4",
+      "pergunta": "Qual personagem é o amigo raposa de duas caudas do Sonic?",
+      "alternativas": ["Tails", "Knuckles", "Shadow", "Silver", "Amy"],
+      "resposta_correta": 0,
+      "explicacao": "Miles \"Tails\" Prower estreou em Sonic the Hedgehog 2 (1992) e usa as duas caudas para voar."
+    },
+    {
+      "id": "f5",
+      "pergunta": "Em Pac-Man, o que o personagem precisa comer para completar cada labirinto?",
+      "alternativas": ["Pastilhas (pac-dots)", "Moedas", "Cogumelos", "Estrelas", "Anéis"],
+      "resposta_correta": 0,
+      "explicacao": "Pac-Man come todas as pastilhas do labirinto enquanto foge dos fantasmas, e as pastilhas grandes o deixam capaz de comê-los."
+    },
+    {
+      "id": "f6",
+      "pergunta": "Qual é o nome da princesa que Mario costuma resgatar?",
+      "alternativas": ["Peach", "Daisy", "Rosalina", "Zelda", "Pauline"],
+      "resposta_correta": 0,
+      "explicacao": "A Princesa Peach governa o Reino do Cogumelo e é raptada por Bowser em quase toda a série."
+    },
+    {
+      "id": "f7",
+      "pergunta": "Qual é o principal vilão da série Super Mario?",
+      "alternativas": ["Bowser", "Wario", "Donkey Kong", "Ganondorf", "King Boo"],
+      "resposta_correta": 0,
+      "explicacao": "Bowser é o rei dos Koopas e rival de Mario desde Super Mario Bros. (1985)."
+    },
+    {
+      "id": "f8",
+      "pergunta": "Quem é o protagonista que empunha a Master Sword em The Legend of Zelda?",
+      "alternativas": ["Link", "Zelda", "Ganon", "Epona", "Navi"],
+      "resposta_correta": 0,
+      "explicacao": "Muita gente acha que o herói se chama Zelda, mas Zelda é a princesa. O herói é Link."
+    },
+    {
+      "id": "f9",
+      "pergunta": "Quem é o vilão mais recorrente da série The Legend of Zelda?",
+      "alternativas": ["Ganon (Ganondorf)", "Bowser", "Sephiroth", "Dr. Eggman", "Vaati"],
+      "resposta_correta": 0,
+      "explicacao": "Ganondorf, o Rei do Mal, é o principal antagonista de vários jogos da série."
+    },
+    {
+      "id": "f10",
+      "pergunta": "Qual Pokémon é o mascote da franquia?",
+      "alternativas": ["Pikachu", "Charmander", "Eevee", "Jigglypuff", "Meowth"],
+      "resposta_correta": 0,
+      "explicacao": "Pikachu é o Pokémon número 025 e virou símbolo mundial da marca."
+    },
+    {
+      "id": "f11",
+      "pergunta": "Qual é o tipo do Pikachu?",
+      "alternativas": ["Elétrico", "Fogo", "Água", "Normal", "Lutador"],
+      "resposta_correta": 0,
+      "explicacao": "Pikachu é do tipo Elétrico e evolui para Raichu com uma Pedra do Trovão."
+    },
+    {
+      "id": "f12",
+      "pergunta": "Qual Pokémon inicial da primeira geração (Kanto) é do tipo Fogo?",
+      "alternativas": ["Charmander", "Squirtle", "Bulbasaur", "Cyndaquil", "Torchic"],
+      "resposta_correta": 0,
+      "explicacao": "Os iniciais de Kanto são Bulbasaur (planta), Charmander (fogo) e Squirtle (água)."
+    },
+    {
+      "id": "f13",
+      "pergunta": "Qual monstro do Minecraft explode ao se aproximar do jogador?",
+      "alternativas": ["Creeper", "Zumbi", "Esqueleto", "Aranha", "Enderman"],
+      "resposta_correta": 0,
+      "explicacao": "O Creeper é um dos símbolos do jogo e se aproxima silenciosamente antes de explodir."
+    },
+    {
+      "id": "f14",
+      "pergunta": "Qual material é necessário para construir um portal para o Nether no Minecraft?",
+      "alternativas": ["Obsidiana", "Diamante", "Bedrock", "Esmeralda", "Netherita"],
+      "resposta_correta": 0,
+      "explicacao": "O portal é feito de obsidiana e ativado com isqueiro ou bola de fogo."
+    },
+    {
+      "id": "f15",
+      "pergunta": "Qual criatura do Minecraft solta Pérolas do Ender?",
+      "alternativas": ["Enderman", "Creeper", "Aldeão", "Blaze", "Ghast"],
+      "resposta_correta": 0,
+      "explicacao": "O Enderman é alto, teleporta-se e solta pérolas que o jogador usa para localizar a fortaleza do End."
+    },
+    {
+      "id": "f16",
+      "pergunta": "Qual é o chefe final tradicional do Minecraft, derrotado na dimensão The End?",
+      "alternativas": ["Ender Dragon", "Wither", "Warden", "Ghast", "Guardião"],
+      "resposta_correta": 0,
+      "explicacao": "O Ender Dragon vive no The End e é considerado o chefe final do jogo."
+    },
+    {
+      "id": "f17",
+      "pergunta": "Quantos quadrados forma cada peça do Tetris?",
+      "alternativas": ["4", "3", "5", "6", "2"],
+      "resposta_correta": 0,
+      "explicacao": "Cada peça é um tetraminó, formado por quatro blocos, e daí vem o nome do jogo."
+    },
+    {
+      "id": "f18",
+      "pergunta": "Quantas linhas é preciso completar de uma vez para fazer um \"Tetris\"?",
+      "alternativas": ["4", "2", "3", "5", "6"],
+      "resposta_correta": 0,
+      "explicacao": "Completar quatro linhas ao mesmo tempo, com a peça I, dá a maior pontuação em uma jogada."
+    },
+    {
+      "id": "f19",
+      "pergunta": "Qual empresa criou Mario e The Legend of Zelda?",
+      "alternativas": ["Nintendo", "Sega", "Sony", "Atari", "Capcom"],
+      "resposta_correta": 0,
+      "explicacao": "A Nintendo foi fundada em 1889 como fabricante de cartas e hoje é uma das maiores empresas de games."
+    },
+    {
+      "id": "f20",
+      "pergunta": "Qual empresa criou o Sonic?",
+      "alternativas": ["Sega", "Nintendo", "Sony", "Namco", "Konami"],
+      "resposta_correta": 0,
+      "explicacao": "Sonic foi criado pela Sega para competir diretamente com o Mario da Nintendo."
+    },
+    {
+      "id": "f21",
+      "pergunta": "Qual empresa fabrica o PlayStation?",
+      "alternativas": ["Sony", "Nintendo", "Sega", "Microsoft", "Atari"],
+      "resposta_correta": 0,
+      "explicacao": "O primeiro PlayStation foi lançado em 1994 no Japão."
+    },
+    {
+      "id": "f22",
+      "pergunta": "Qual empresa fabrica o Xbox?",
+      "alternativas": ["Microsoft", "Sony", "Nintendo", "Sega", "Apple"],
+      "resposta_correta": 0,
+      "explicacao": "O primeiro Xbox foi lançado em 2001, com Halo: Combat Evolved como destaque."
+    },
+    {
+      "id": "f23",
+      "pergunta": "Qual empresa desenvolve o Fortnite?",
+      "alternativas": ["Epic Games", "Valve", "Activision", "Ubisoft", "Riot Games"],
+      "resposta_correta": 0,
+      "explicacao": "A Epic Games também criou a Unreal Engine, usada em muitos jogos."
+    },
+    {
+      "id": "f24",
+      "pergunta": "Qual modo de jogo tornou o Fortnite mundialmente famoso, em 2017?",
+      "alternativas": ["Battle Royale", "Corrida", "Plataforma 2D", "Tiro tático em equipe pequena", "Rally"],
+      "resposta_correta": 0,
+      "explicacao": "O modo Battle Royale, em que 100 jogadores competem até restar um, explodiu em popularidade."
+    },
+    {
+      "id": "f25",
+      "pergunta": "Em Among Us, qual é o papel que sabota e elimina os tripulantes?",
+      "alternativas": ["Impostor", "Detetive", "Cientista", "Engenheiro", "Fantasma"],
+      "resposta_correta": 0,
+      "explicacao": "O Impostor tenta eliminar os tripulantes sem ser descoberto nas reuniões."
+    },
+    {
+      "id": "f26",
+      "pergunta": "Em Among Us, o que os tripulantes podem fazer para vencer sem expulsar impostores?",
+      "alternativas": ["Completar todas as tarefas", "Trancar todas as portas", "Desligar a nave", "Esconder-se na ventilação", "Destruir os impostores com armas"],
+      "resposta_correta": 0,
+      "explicacao": "Se todas as tarefas forem concluídas, a tripulação vence."
+    },
+    {
+      "id": "f27",
+      "pergunta": "Qual empresa desenvolveu a série Grand Theft Auto (GTA)?",
+      "alternativas": ["Rockstar Games", "Ubisoft", "Electronic Arts", "Bethesda", "Activision"],
+      "resposta_correta": 0,
+      "explicacao": "A Rockstar é também a criadora de Red Dead Redemption."
+    },
+    {
+      "id": "f28",
+      "pergunta": "Qual é o nome do protagonista de GTA San Andreas?",
+      "alternativas": ["Carl \"CJ\" Johnson", "Tommy Vercetti", "Niko Bellic", "Trevor Philips", "Claude"],
+      "resposta_correta": 0,
+      "explicacao": "CJ volta para Los Santos para o enterro da mãe e se envolve em guerras de gangues."
+    },
+    {
+      "id": "f29",
+      "pergunta": "Qual destes é um dos três protagonistas de GTA V?",
+      "alternativas": ["Franklin Clinton", "Niko Bellic", "Tommy Vercetti", "CJ", "Luis Lopez"],
+      "resposta_correta": 0,
+      "explicacao": "GTA V se alterna entre Michael, Franklin e Trevor."
+    },
+    {
+      "id": "f30",
+      "pergunta": "Qual modo de Call of Duty enfrenta hordas de mortos-vivos?",
+      "alternativas": ["Zombies", "Deathmatch", "Capture the Flag", "Gunfight", "Hardpoint"],
+      "resposta_correta": 0,
+      "explicacao": "O modo Zombies estreou em Call of Duty: World at War, de 2008."
+    },
+    {
+      "id": "f31",
+      "pergunta": "Quais são as duas equipes que se enfrentam em Counter-Strike?",
+      "alternativas": ["Terroristas e Antiterroristas", "Azuis e Vermelhos", "Polícia e Ladrões", "Ataque e Defesa", "Aliança e Horda"],
+      "resposta_correta": 0,
+      "explicacao": "Os terroristas plantam a bomba e os antiterroristas tentam impedir."
+    },
+    {
+      "id": "f32",
+      "pergunta": "Qual empresa criou League of Legends?",
+      "alternativas": ["Riot Games", "Valve", "Blizzard", "Epic Games", "Garena"],
+      "resposta_correta": 0,
+      "explicacao": "A Riot Games lançou LoL em 2009."
+    },
+    {
+      "id": "f33",
+      "pergunta": "Qual estrutura precisa ser destruída para vencer uma partida de League of Legends?",
+      "alternativas": ["Nexus", "Torre do Rei", "Cristal", "Trono", "Base Central"],
+      "resposta_correta": 0,
+      "explicacao": "Destruir o Nexus inimigo encerra a partida."
+    },
+    {
+      "id": "f34",
+      "pergunta": "Qual empresa criou o jogo Overwatch?",
+      "alternativas": ["Blizzard", "Riot Games", "Valve", "Respawn", "Epic Games"],
+      "resposta_correta": 0,
+      "explicacao": "Overwatch foi lançado em 2016 pela Blizzard, a mesma de WoW e Diablo."
+    },
+    {
+      "id": "f35",
+      "pergunta": "Quais são as duas facções principais de World of Warcraft?",
+      "alternativas": ["Aliança e Horda", "Luz e Trevas", "Humanos e Elfos", "Ordem e Caos", "Norte e Sul"],
+      "resposta_correta": 0,
+      "explicacao": "WoW foi lançado em 2004 e mantém a rivalidade entre Aliança e Horda desde então."
+    },
+    {
+      "id": "f36",
+      "pergunta": "Qual é o golpe de fogo mais famoso de Ryu em Street Fighter?",
+      "alternativas": ["Hadouken", "Shoryuken", "Tatsumaki", "Sonic Boom", "Spinning Bird Kick"],
+      "resposta_correta": 0,
+      "explicacao": "O Hadouken é lançado com o movimento de um quarto de círculo e soco."
+    },
+    {
+      "id": "f37",
+      "pergunta": "Como se chama o golpe final e brutal de Mortal Kombat executado após a ordem \"Finish Him\"?",
+      "alternativas": ["Fatality", "Brutality", "Babality", "Friendship", "Supremacy"],
+      "resposta_correta": 0,
+      "explicacao": "O Fatality foi a marca registrada da série desde o primeiro jogo, de 1992."
+    },
+    {
+      "id": "f38",
+      "pergunta": "Qual personagem de Mortal Kombat é conhecido por puxar o oponente com uma lança e gritar \"Get over here\"?",
+      "alternativas": ["Scorpion", "Sub-Zero", "Raiden", "Liu Kang", "Johnny Cage"],
+      "resposta_correta": 0,
+      "explicacao": "Scorpion usa uma corrente com uma lança para arrastar os inimigos."
+    },
+    {
+      "id": "f39",
+      "pergunta": "Qual elemento Sub-Zero controla em Mortal Kombat?",
+      "alternativas": ["Gelo", "Fogo", "Eletricidade", "Vento", "Terra"],
+      "resposta_correta": 0,
+      "explicacao": "Sub-Zero é o guerreiro do clã Lin Kuei que congela os adversários."
+    },
+    {
+      "id": "f40",
+      "pergunta": "Qual empresa maligna é a vilã da série Resident Evil?",
+      "alternativas": ["Umbrella Corporation", "Black Mesa", "Aperture Science", "Shinra", "Abstergo"],
+      "resposta_correta": 0,
+      "explicacao": "A Umbrella criou o T-Virus e é a origem dos desastres da série."
+    },
+    {
+      "id": "f41",
+      "pergunta": "Qual mensagem aparece na tela quando o jogador morre em Dark Souls?",
+      "alternativas": ["YOU DIED", "GAME OVER", "WASTED", "MISSION FAILED", "FINISH HIM"],
+      "resposta_correta": 0,
+      "explicacao": "A tela vermelha com \"YOU DIED\" virou marca registrada da FromSoftware e fonte de memes."
+    },
+    {
+      "id": "f42",
+      "pergunta": "O que é \"Fus Ro Dah\", em Skyrim?",
+      "alternativas": ["Um grito de dragão que empurra inimigos", "Um feitiço de cura", "O nome do protagonista", "Uma cidade de Skyrim", "Uma poção rara"],
+      "resposta_correta": 0,
+      "explicacao": "É o Thu'um \"Força Implacável\" (Unrelenting Force) e virou meme mundial."
+    },
+    {
+      "id": "f43",
+      "pergunta": "Em qual parte do corpo os guardas de Skyrim dizem ter levado uma flechada para abandonar a vida de aventureiro?",
+      "alternativas": ["Joelho", "Ombro", "Pé", "Cotovelo", "Mão"],
+      "resposta_correta": 0,
+      "explicacao": "A frase \"levei uma flechada no joelho\" virou um dos memes mais famosos dos games."
+    },
+    {
+      "id": "f44",
+      "pergunta": "Qual é o título do protagonista de Skyrim, o herói com sangue de dragão?",
+      "alternativas": ["Dovahkiin (Dragonborn)", "Nord Supremo", "Arquimago", "Lorde Dragão", "Thane"],
+      "resposta_correta": 0,
+      "explicacao": "Dovahkiin significa \"caçador de dragões\" na língua dos dragões."
+    },
+    {
+      "id": "f45",
+      "pergunta": "Quem é o protagonista de The Witcher 3?",
+      "alternativas": ["Geralt de Rívia", "Dandelion", "Yennefer", "Vesemir", "Ciri"],
+      "resposta_correta": 0,
+      "explicacao": "Geralt é um bruxo caçador de monstros criado nos livros de Andrzej Sapkowski."
+    },
+    {
+      "id": "f46",
+      "pergunta": "Quem é o protagonista de Red Dead Redemption 2?",
+      "alternativas": ["Arthur Morgan", "John Marston", "Dutch van der Linde", "Micah Bell", "Sadie Adler"],
+      "resposta_correta": 0,
+      "explicacao": "Arthur é um membro da gangue de Van der Linde no fim do Velho Oeste."
+    },
+    {
+      "id": "f47",
+      "pergunta": "Quem é o protagonista da série God of War?",
+      "alternativas": ["Kratos", "Atreus", "Zeus", "Ares", "Baldur"],
+      "resposta_correta": 0,
+      "explicacao": "Kratos é um espartano que enfrenta os deuses gregos e depois os nórdicos."
+    },
+    {
+      "id": "f48",
+      "pergunta": "Como se chama o filho de Kratos no God of War de 2018?",
+      "alternativas": ["Atreus", "Loki", "Faye", "Calliope", "Tyr"],
+      "resposta_correta": 0,
+      "explicacao": "Atreus aparece no jogo de 2018 e acompanha o pai na jornada nórdica."
+    },
+    {
+      "id": "f49",
+      "pergunta": "Quem é o protagonista da série Halo?",
+      "alternativas": ["Master Chief", "Cortana", "Arbiter", "Sargento Johnson", "Noble Six"],
+      "resposta_correta": 0,
+      "explicacao": "Master Chief é o Spartan-117, símbolo do Xbox."
+    },
+    {
+      "id": "f50",
+      "pergunta": "Contra quem o jogador luta em Doom?",
+      "alternativas": ["Demônios do Inferno", "Zumbis nazistas", "Alienígenas insetoides", "Robôs rebeldes", "Vampiros"],
+      "resposta_correta": 0,
+      "explicacao": "O jogador é um marine que combate demônios invadindo bases em Marte."
+    },
+    {
+      "id": "f51",
+      "pergunta": "Em qual jogo surgiu o meme \"o bolo é uma mentira\"?",
+      "alternativas": ["Portal", "Half-Life", "BioShock", "Fallout", "Left 4 Dead"],
+      "resposta_correta": 0,
+      "explicacao": "A frase aparece escrita em paredes escondidas de Portal, de 2007."
+    },
+    {
+      "id": "f52",
+      "pergunta": "Qual item permite criar portais em Portal?",
+      "alternativas": ["Portal Gun (arma de portais)", "Chave de fenda", "Óculos de Aperture", "Teletransportador", "Bastão de energia"],
+      "resposta_correta": 0,
+      "explicacao": "A Portal Gun é a ferramenta principal da protagonista Chell."
+    },
+    {
+      "id": "f53",
+      "pergunta": "Qual é a arma corpo a corpo icônica de Gordon Freeman em Half-Life?",
+      "alternativas": ["Pé de cabra", "Machado", "Chave inglesa", "Martelo", "Faca"],
+      "resposta_correta": 0,
+      "explicacao": "O pé de cabra é um dos itens mais reconhecíveis do mundo dos games."
+    },
+    {
+      "id": "f54",
+      "pergunta": "Qual personagem de Animal Crossing empresta dinheiro e cobra a dívida da casa do jogador?",
+      "alternativas": ["Tom Nook", "Isabelle", "K.K. Slider", "Blathers", "Timmy"],
+      "resposta_correta": 0,
+      "explicacao": "Tom Nook é um tanuki empresário que administra imóveis na ilha."
+    },
+    {
+      "id": "f55",
+      "pergunta": "Como se chama a moeda de Animal Crossing?",
+      "alternativas": ["Sinos (Bells)", "Moedas", "Rupias", "Simoleons", "Zenny"],
+      "resposta_correta": 0,
+      "explicacao": "Os Sinos são usados para pagar empréstimos e comprar itens."
+    },
+    {
+      "id": "f56",
+      "pergunta": "Qual item de Mario Kart persegue o primeiro colocado e causa uma explosão?",
+      "alternativas": ["Casco azul", "Casco verde", "Casco vermelho", "Casca de banana", "Bob-omb"],
+      "resposta_correta": 0,
+      "explicacao": "O casco azul voa até o líder e é famoso por arruinar corridas."
+    },
+    {
+      "id": "f57",
+      "pergunta": "Qual é a cor tradicional de Kirby?",
+      "alternativas": ["Rosa", "Azul", "Branco", "Amarelo", "Verde"],
+      "resposta_correta": 0,
+      "explicacao": "Kirby é rosa na maioria dos jogos, embora a primeira arte americana o tenha pintado de branco."
+    },
+    {
+      "id": "f58",
+      "pergunta": "Qual é a habilidade principal de Kirby?",
+      "alternativas": ["Copiar habilidades dos inimigos que engole", "Voar sem limite", "Disparar raios", "Ficar invisível", "Controlar o tempo"],
+      "resposta_correta": 0,
+      "explicacao": "Kirby engole inimigos e assume seus poderes."
+    },
+    {
+      "id": "f59",
+      "pergunta": "Qual é a comida favorita de Donkey Kong?",
+      "alternativas": ["Banana", "Maçã", "Coco", "Abacaxi", "Uva"],
+      "resposta_correta": 0,
+      "explicacao": "Banana é o símbolo da série e item coletável em Donkey Kong Country."
+    },
+    {
+      "id": "f60",
+      "pergunta": "Quem é a protagonista da série Metroid?",
+      "alternativas": ["Samus Aran", "Zero Suit", "Ridley", "Rosalina", "Lara Croft"],
+      "resposta_correta": 0,
+      "explicacao": "Samus é uma caçadora de recompensas e apareceu no primeiro Metroid, de 1986."
+    },
+    {
+      "id": "f61",
+      "pergunta": "Qual esporte o clássico Pong simula?",
+      "alternativas": ["Tênis de mesa", "Futebol", "Basquete", "Hóquei", "Vôlei"],
+      "resposta_correta": 0,
+      "explicacao": "Pong foi lançado pela Atari em 1972."
+    },
+    {
+      "id": "f62",
+      "pergunta": "Em Space Invaders, o que desce em direção ao jogador?",
+      "alternativas": ["Alienígenas", "Meteoros", "Robôs", "Naves-mãe apenas", "Soldados"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo da Taito, de 1978, popularizou os arcades."
+    },
+    {
+      "id": "f63",
+      "pergunta": "Quem os pássaros de Angry Birds querem derrotar?",
+      "alternativas": ["Porcos verdes", "Raposas", "Gatos", "Cobras", "Corvos"],
+      "resposta_correta": 0,
+      "explicacao": "Os porcos roubaram os ovos dos pássaros."
+    },
+    {
+      "id": "f64",
+      "pergunta": "O que o passarinho de Flappy Bird precisa evitar?",
+      "alternativas": ["Canos", "Nuvens", "Espinhos", "Balas", "Árvores"],
+      "resposta_correta": 0,
+      "explicacao": "Flappy Bird viralizou em 2013 por ser simples e extremamente difícil."
+    },
+    {
+      "id": "f65",
+      "pergunta": "Qual empresa desenvolveu o jogo Free Fire?",
+      "alternativas": ["Garena", "Tencent", "Activision", "Epic Games", "Supercell"],
+      "resposta_correta": 0,
+      "explicacao": "Free Fire é um battle royale mobile muito popular no Brasil."
+    },
+    {
+      "id": "f66",
+      "pergunta": "O que é o Roblox?",
+      "alternativas": ["Plataforma onde usuários criam e jogam jogos", "Um console", "Um jogo de corrida", "Uma loja de aplicativos", "Um sistema operacional"],
+      "resposta_correta": 0,
+      "explicacao": "Os jogos do Roblox são criados pela própria comunidade."
+    },
+    {
+      "id": "f67",
+      "pergunta": "Qual idioma fictício falam os personagens de The Sims?",
+      "alternativas": ["Simlish", "Klingon", "Élfico", "Esperanto", "Dothraki"],
+      "resposta_correta": 0,
+      "explicacao": "O Simlish foi criado para o jogo e dispensa dublagens em vários idiomas."
+    },
+    {
+      "id": "f68",
+      "pergunta": "Como se chama a moeda de The Sims?",
+      "alternativas": ["Simoleons", "Simcoins", "Credits", "Bells", "Gil"],
+      "resposta_correta": 0,
+      "explicacao": "Os Simoleons são representados pelo símbolo §."
+    },
+    {
+      "id": "f69",
+      "pergunta": "Qual é a cor do fantasma Blinky em Pac-Man?",
+      "alternativas": ["Vermelho", "Rosa", "Azul-claro", "Laranja", "Verde"],
+      "resposta_correta": 0,
+      "explicacao": "Blinky persegue Pac-Man diretamente."
+    },
+    {
+      "id": "f70",
+      "pergunta": "Qual é o nome do reino onde fica o castelo de Zelda?",
+      "alternativas": ["Hyrule", "Termina", "Lorule", "Tamriel", "Mushroom"],
+      "resposta_correta": 0,
+      "explicacao": "Hyrule é o cenário central da série The Legend of Zelda."
+    },
+    {
+      "id": "f71",
+      "pergunta": "Qual é o nome do reino governado pela Princesa Peach?",
+      "alternativas": ["Reino do Cogumelo", "Hyrule", "Reino Koopa", "Ilha Delfino", "Reino de Sarasaland"],
+      "resposta_correta": 0,
+      "explicacao": "O Reino do Cogumelo é o principal cenário da série Super Mario."
+    },
+    {
+      "id": "f72",
+      "pergunta": "Qual é a cidade natal do protagonista em Pokémon Red e Blue?",
+      "alternativas": ["Pallet Town", "Viridian City", "Pewter City", "Cerulean City", "Lavender Town"],
+      "resposta_correta": 0,
+      "explicacao": "A jornada começa em Pallet Town, onde mora o Professor Oak."
+    },
+    {
+      "id": "f73",
+      "pergunta": "Qual animal é o Sonic?",
+      "alternativas": ["Ouriço", "Raposa", "Esquilo", "Coelho", "Gato"],
+      "resposta_correta": 0,
+      "explicacao": "Sonic é um ouriço azul que corre em velocidade supersônica."
+    },
+    {
+      "id": "f74",
+      "pergunta": "Em qual console Halo: Combat Evolved foi lançado em 2001?",
+      "alternativas": ["Xbox original", "PlayStation 2", "Nintendo GameCube", "Dreamcast", "PC apenas"],
+      "resposta_correta": 0,
+      "explicacao": "Halo foi o grande jogo de lançamento do Xbox."
+    },
+    {
+      "id": "f75",
+      "pergunta": "Qual empresa comprou o Minecraft em 2014?",
+      "alternativas": ["Microsoft", "Sony", "Google", "Apple", "Electronic Arts"],
+      "resposta_correta": 0,
+      "explicacao": "A Microsoft pagou cerca de 2,5 bilhões de dólares pela Mojang."
+    },
+    {
+      "id": "f76",
+      "pergunta": "Qual é o nome da égua de Link, que estreou em Ocarina of Time?",
+      "alternativas": ["Epona", "Roach", "Agro", "Shadowmere", "Binky"],
+      "resposta_correta": 0,
+      "explicacao": "Epona é chamada com a Ocarina e acompanha Link em vários jogos da série."
+    },
+    {
+      "id": "f77",
+      "pergunta": "Quantas partes tem a Triforce em The Legend of Zelda?",
+      "alternativas": ["3", "2", "4", "5", "7"],
+      "resposta_correta": 0,
+      "explicacao": "A Triforce é formada por três peças: Poder, Sabedoria e Coragem."
+    },
+    {
+      "id": "f78",
+      "pergunta": "Como se chama a moeda de The Legend of Zelda?",
+      "alternativas": ["Rúpia", "Sino", "Gil", "Zenny", "Moeda de ouro"],
+      "resposta_correta": 0,
+      "explicacao": "As rúpias são coletadas em vasos, arbustos e baús de Hyrule."
+    },
+    {
+      "id": "f79",
+      "pergunta": "Qual item faz o Mario crescer em Super Mario Bros.?",
+      "alternativas": ["Super Cogumelo", "Flor de Fogo", "Estrela", "Pena", "Casco"],
+      "resposta_correta": 0,
+      "explicacao": "O Super Cogumelo transforma Mario pequeno em Mario grande e o deixa resistir a um golpe."
+    },
+    {
+      "id": "f80",
+      "pergunta": "Qual item permite ao Mario lançar bolas de fogo?",
+      "alternativas": ["Flor de Fogo", "Super Cogumelo", "Estrela", "Cogumelo de 1-UP", "Folha"],
+      "resposta_correta": 0,
+      "explicacao": "A Flor de Fogo muda a roupa de Mario para branca e vermelha."
+    },
+    {
+      "id": "f81",
+      "pergunta": "Qual item deixa o Mario invencível por alguns segundos?",
+      "alternativas": ["Estrela", "Super Cogumelo", "Flor de Fogo", "Pena", "Moeda"],
+      "resposta_correta": 0,
+      "explicacao": "Com a Estrela, Mario derrota inimigos apenas encostando neles."
+    },
+    {
+      "id": "f82",
+      "pergunta": "Por onde o Mario entra para visitar áreas secretas em muitos jogos?",
+      "alternativas": ["Canos verdes", "Portas vermelhas", "Janelas", "Buracos no chão", "Escadas"],
+      "resposta_correta": 0,
+      "explicacao": "Os canos verdes são uma marca da série e lembram a profissão de encanador."
+    },
+    {
+      "id": "f83",
+      "pergunta": "Qual personagem dinossauro verde de Mario engole inimigos e bota ovos?",
+      "alternativas": ["Yoshi", "Bowser", "Donkey Kong", "Birdo", "Toad"],
+      "resposta_correta": 0,
+      "explicacao": "Yoshi estreou em Super Mario World, de 1990."
+    },
+    {
+      "id": "f84",
+      "pergunta": "Qual é o equipamento que Luigi usa para capturar fantasmas em Luigi's Mansion?",
+      "alternativas": ["Aspirador (Poltergust)", "Rede", "Raio de prótons", "Lanterna mágica", "Espada"],
+      "resposta_correta": 0,
+      "explicacao": "O Poltergust 3000 aspira fantasmas na mansão assombrada."
+    },
+    {
+      "id": "f85",
+      "pergunta": "Qual personagem amarelo, ganancioso, é o rival de Mario com um \"W\" no chapéu?",
+      "alternativas": ["Wario", "Waluigi", "Bowser", "Toad", "Diddy Kong"],
+      "resposta_correta": 0,
+      "explicacao": "Wario estreou em Super Mario Land 2: 6 Golden Coins."
+    },
+    {
+      "id": "f86",
+      "pergunta": "O que o Sonic coleta para se proteger de dano?",
+      "alternativas": ["Anéis", "Moedas", "Cristais", "Estrelas", "Cogumelos"],
+      "resposta_correta": 0,
+      "explicacao": "Se for atingido, Sonic perde os anéis, que ficam voando pela tela."
+    },
+    {
+      "id": "f87",
+      "pergunta": "Qual é o vilão principal da série Sonic?",
+      "alternativas": ["Dr. Eggman (Robotnik)", "Bowser", "Knuckles", "Shadow", "Metal Sonic"],
+      "resposta_correta": 0,
+      "explicacao": "Eggman quer dominar o mundo e capturar os animais para suas máquinas."
+    },
+    {
+      "id": "f88",
+      "pergunta": "Quantas Esmeraldas do Caos existem tradicionalmente na série Sonic?",
+      "alternativas": ["7", "5", "6", "8", "10"],
+      "resposta_correta": 0,
+      "explicacao": "Com as sete esmeraldas, Sonic vira Super Sonic."
+    },
+    {
+      "id": "f89",
+      "pergunta": "Qual personagem de Sonic é um equidna vermelho conhecido pelos socos fortes?",
+      "alternativas": ["Knuckles", "Tails", "Shadow", "Amy", "Rouge"],
+      "resposta_correta": 0,
+      "explicacao": "Knuckles guarda a Master Emerald na Ilha do Anjo."
+    },
+    {
+      "id": "f90",
+      "pergunta": "Qual animal é Crash Bandicoot?",
+      "alternativas": ["Bandicoot (marsupial)", "Canguru", "Coala", "Raposa", "Gambá"],
+      "resposta_correta": 0,
+      "explicacao": "Crash foi criado pela Naughty Dog e estreou no PlayStation, em 1996."
+    },
+    {
+      "id": "f91",
+      "pergunta": "Qual animal é Spyro, protagonista da série da Insomniac?",
+      "alternativas": ["Dragão", "Lagarto", "Dinossauro", "Cobra", "Pterodátilo"],
+      "resposta_correta": 0,
+      "explicacao": "Spyro, o dragão roxo, estreou em 1998 no PlayStation."
+    },
+    {
+      "id": "f92",
+      "pergunta": "Quem é o protagonista de Final Fantasy VII?",
+      "alternativas": ["Cloud Strife", "Squall Leonhart", "Sephiroth", "Tidus", "Zidane"],
+      "resposta_correta": 0,
+      "explicacao": "Cloud é um ex-soldado com uma enorme espada, a Buster Sword."
+    },
+    {
+      "id": "f93",
+      "pergunta": "Quem é o principal vilão de Final Fantasy VII?",
+      "alternativas": ["Sephiroth", "Kefka", "Ultimecia", "Jenova apenas", "Seymour"],
+      "resposta_correta": 0,
+      "explicacao": "Sephiroth é um dos vilões mais famosos dos videogames."
+    },
+    {
+      "id": "f94",
+      "pergunta": "Qual ave amarela serve de montaria nos jogos de Final Fantasy?",
+      "alternativas": ["Chocobo", "Moogle", "Cactuar", "Tonberry", "Bomb"],
+      "resposta_correta": 0,
+      "explicacao": "Os chocobos aparecem em quase todos os jogos principais da série."
+    },
+    {
+      "id": "f95",
+      "pergunta": "Kingdom Hearts mistura personagens de Final Fantasy com personagens de qual empresa?",
+      "alternativas": ["Disney", "Warner Bros.", "Pixar apenas", "DreamWorks", "Marvel"],
+      "resposta_correta": 0,
+      "explicacao": "A série é fruto de uma parceria entre Square e Disney."
+    },
+    {
+      "id": "f96",
+      "pergunta": "Qual objeto cotidiano o Solid Snake usa para se esconder em Metal Gear Solid?",
+      "alternativas": ["Caixa de papelão", "Barril", "Lixeira", "Armário", "Cobertor"],
+      "resposta_correta": 0,
+      "explicacao": "A caixa de papelão virou símbolo da série e inspirou piadas em vários jogos."
+    },
+    {
+      "id": "f97",
+      "pergunta": "Como se chama o salto característico dos assassinos em Assassin's Creed?",
+      "alternativas": ["Salto de fé", "Salto mortal", "Queda livre", "Pulo ninja", "Voo da águia"],
+      "resposta_correta": 0,
+      "explicacao": "O salto de fé termina em montes de feno ou água."
+    },
+    {
+      "id": "f98",
+      "pergunta": "Quem é o protagonista da série Uncharted?",
+      "alternativas": ["Nathan Drake", "Joel", "Ezio", "Lara Croft", "Indiana Jones"],
+      "resposta_correta": 0,
+      "explicacao": "Nathan Drake é um caçador de tesouros criado pela Naughty Dog."
+    },
+    {
+      "id": "f99",
+      "pergunta": "Qual fungo causa a infecção em The Last of Us?",
+      "alternativas": ["Cordyceps", "Penicillium", "Aspergillus", "Candida", "Rhizopus"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo se inspirou em fungos reais que parasitam insetos."
+    },
+    {
+      "id": "f100",
+      "pergunta": "Quem é a protagonista de Horizon Zero Dawn?",
+      "alternativas": ["Aloy", "Ellie", "Lara Croft", "Elizabeth", "Jill Valentine"],
+      "resposta_correta": 0,
+      "explicacao": "Aloy caça máquinas gigantes em um mundo pós-apocalíptico."
+    },
+    {
+      "id": "f101",
+      "pergunta": "Para qual nome a série FIFA mudou em 2023, após o fim da parceria com a entidade?",
+      "alternativas": ["EA Sports FC", "PES", "eFootball", "Ultimate Football", "FC Premier"],
+      "resposta_correta": 0,
+      "explicacao": "A EA manteve a série de futebol, mas passou a usar o nome EA Sports FC."
+    },
+    {
+      "id": "f102",
+      "pergunta": "Qual periférico em forma de instrumento marcou a série Guitar Hero?",
+      "alternativas": ["Guitarra de plástico", "Bateria", "Microfone", "Teclado", "Violão"],
+      "resposta_correta": 0,
+      "explicacao": "Os jogadores tocam notas coloridas no ritmo das músicas."
+    },
+    {
+      "id": "f103",
+      "pergunta": "Qual jogo acompanhava o Nintendo Wii na maioria dos países?",
+      "alternativas": ["Wii Sports", "Mario Kart Wii", "Wii Fit", "Super Smash Bros. Brawl", "Wii Play"],
+      "resposta_correta": 0,
+      "explicacao": "Wii Sports ajudou o console a atingir um público casual enorme."
+    },
+    {
+      "id": "f104",
+      "pergunta": "O que caracteriza o Nintendo Switch?",
+      "alternativas": ["Pode ser usado como portátil ou ligado à TV", "É apenas portátil", "Funciona só com realidade virtual", "Usa discos Blu-ray", "Funciona apenas online"],
+      "resposta_correta": 0,
+      "explicacao": "O Switch foi lançado em 2017 e é um console híbrido."
+    },
+    {
+      "id": "f105",
+      "pergunta": "Qual jogo acompanhava muitos pacotes do Game Boy original?",
+      "alternativas": ["Tetris", "Super Mario Land", "Pokémon Red", "Kirby's Dream Land", "Metroid II"],
+      "resposta_correta": 0,
+      "explicacao": "Tetris foi um dos grandes responsáveis pelo sucesso do Game Boy."
+    },
+    {
+      "id": "f106",
+      "pergunta": "Qual destes consoles é da Atari?",
+      "alternativas": ["Atari 2600", "Mega Drive", "Super Nintendo", "Dreamcast", "PlayStation"],
+      "resposta_correta": 0,
+      "explicacao": "O Atari 2600 foi lançado em 1977."
+    },
+    {
+      "id": "f107",
+      "pergunta": "No Brasil, qual empresa distribuía os consoles da Sega?",
+      "alternativas": ["Tectoy", "Gradiente", "Philco", "Playtronic", "Evadin"],
+      "resposta_correta": 0,
+      "explicacao": "A Tectoy trouxe o Master System e o Mega Drive para o país."
+    },
+    {
+      "id": "f108",
+      "pergunta": "Qual console 16 bits da Nintendo sucedeu o NES?",
+      "alternativas": ["Super Nintendo", "Nintendo 64", "Game Boy Advance", "GameCube", "Virtual Boy"],
+      "resposta_correta": 0,
+      "explicacao": "O Super Nintendo chegou em 1990 no Japão."
+    },
+    {
+      "id": "f109",
+      "pergunta": "Qual objeto o time terrorista planta nos sites em Counter-Strike?",
+      "alternativas": ["Bomba C4", "Granada de fumaça", "Mina terrestre", "Dinamite", "Cartucho de gás"],
+      "resposta_correta": 0,
+      "explicacao": "A equipe precisa defender a bomba até explodir."
+    },
+    {
+      "id": "f110",
+      "pergunta": "Qual empresa criou o Valorant?",
+      "alternativas": ["Riot Games", "Valve", "Blizzard", "Epic Games", "Ubisoft"],
+      "resposta_correta": 0,
+      "explicacao": "Valorant foi lançado em 2020."
+    },
+    {
+      "id": "f111",
+      "pergunta": "Qual bloco do Minecraft é praticamente impossível de quebrar no modo Sobrevivência?",
+      "alternativas": ["Bedrock", "Obsidiana", "Diamante", "Netherita", "Ferro"],
+      "resposta_correta": 0,
+      "explicacao": "A bedrock forma o fundo do mundo e algumas partes do Nether."
+    },
+    {
+      "id": "f112",
+      "pergunta": "Qual é o nome do personagem padrão masculino de Minecraft?",
+      "alternativas": ["Steve", "Alex", "Notch", "Herobrine", "Herbert"],
+      "resposta_correta": 0,
+      "explicacao": "Steve é o visual clássico, e Alex foi o segundo personagem padrão."
+    },
+    {
+      "id": "f113",
+      "pergunta": "Quantos corações de vida o jogador tem por padrão no Minecraft?",
+      "alternativas": ["10", "5", "20", "8", "3"],
+      "resposta_correta": 0,
+      "explicacao": "São 10 corações, equivalentes a 20 pontos de vida."
+    },
+    {
+      "id": "f114",
+      "pergunta": "Qual é o foco principal de Stardew Valley?",
+      "alternativas": ["Cuidar de uma fazenda", "Exploração espacial", "Guerra medieval", "Corrida de carros", "Sobrevivência zumbi"],
+      "resposta_correta": 0,
+      "explicacao": "O jogador herda uma fazenda do avô e reconstrói a vida no campo."
+    },
+    {
+      "id": "f115",
+      "pergunta": "Qual empresa desenvolveu Pokémon GO?",
+      "alternativas": ["Niantic", "Nintendo", "Game Freak", "The Pokémon Company apenas", "Google"],
+      "resposta_correta": 0,
+      "explicacao": "Pokémon GO usa realidade aumentada e foi lançado em 2016."
+    },
+    {
+      "id": "f116",
+      "pergunta": "Qual objeto é usado para capturar Pokémon nos jogos?",
+      "alternativas": ["Poké Ball", "Pedra da lua", "Rede", "Escudo", "Máquina"],
+      "resposta_correta": 0,
+      "explicacao": "Existem variações, como Great Ball e Ultra Ball."
+    },
+    {
+      "id": "f117",
+      "pergunta": "De qual Pokémon Charizard evolui?",
+      "alternativas": ["Charmeleon", "Charmander", "Dragonite", "Moltres", "Blaziken"],
+      "resposta_correta": 0,
+      "explicacao": "Charmander evolui para Charmeleon e depois para Charizard."
+    },
+    {
+      "id": "f118",
+      "pergunta": "Qual Pokémon possui várias evoluções, como Vaporeon, Jolteon e Flareon?",
+      "alternativas": ["Eevee", "Pikachu", "Ditto", "Mew", "Togepi"],
+      "resposta_correta": 0,
+      "explicacao": "Eevee possui várias formas evolutivas, dependendo da pedra ou condição."
+    },
+    {
+      "id": "f119",
+      "pergunta": "Qual é a equipe vilã da primeira geração de Pokémon?",
+      "alternativas": ["Team Rocket", "Team Aqua", "Team Magma", "Team Galactic", "Team Skull"],
+      "resposta_correta": 0,
+      "explicacao": "A Team Rocket é liderada por Giovanni."
+    },
+    {
+      "id": "f120",
+      "pergunta": "Como se chama o chapéu que o Mario usa para capturar inimigos em Super Mario Odyssey?",
+      "alternativas": ["Cappy", "Boo", "Plumbo", "Nabbit", "Starlo"],
+      "resposta_correta": 0,
+      "explicacao": "Cappy é um fantasma em forma de chapéu e é aliado de Mario."
+    },
+    {
+      "id": "f121",
+      "pergunta": "Em Splatoon, o que os jogadores usam para cobrir o mapa?",
+      "alternativas": ["Tinta", "Lama", "Água", "Neve", "Areia"],
+      "resposta_correta": 0,
+      "explicacao": "Cobrir mais território com tinta é a base das partidas."
+    },
+    {
+      "id": "f122",
+      "pergunta": "Qual empresa é dona da plataforma Steam?",
+      "alternativas": ["Valve", "Epic Games", "Microsoft", "Sony", "EA"],
+      "resposta_correta": 0,
+      "explicacao": "A Steam é a maior loja digital de jogos para PC."
+    },
+    {
+      "id": "f123",
+      "pergunta": "Qual estúdio desenvolveu Elden Ring?",
+      "alternativas": ["FromSoftware", "Capcom", "Bandai Namco apenas", "Square Enix", "CD Projekt Red"],
+      "resposta_correta": 0,
+      "explicacao": "Elden Ring foi lançado em 2022 com a colaboração de George R. R. Martin."
+    },
+    {
+      "id": "f124",
+      "pergunta": "Qual estilo visual marca Cuphead?",
+      "alternativas": ["Desenhos animados dos anos 1930", "Pixel art 8 bits", "Anime moderno", "Realismo 3D", "Aquarela"],
+      "resposta_correta": 0,
+      "explicacao": "Cuphead é desenhado à mão e imita animações clássicas."
+    },
+    {
+      "id": "f125",
+      "pergunta": "Em Undertale, qual é a rota na qual o jogador não mata nenhum monstro?",
+      "alternativas": ["Rota Pacifista", "Rota Genocida", "Rota Neutra", "Rota Sombria", "Rota Heroica"],
+      "resposta_correta": 0,
+      "explicacao": "Poupar todos os monstros leva ao final mais feliz."
+    },
+    {
+      "id": "f126",
+      "pergunta": "Em Duck Hunt, o que o cachorro faz quando o jogador erra o tiro?",
+      "alternativas": ["Ri do jogador", "Foge", "Late", "Chora", "Dorme"],
+      "resposta_correta": 0,
+      "explicacao": "A risada do cachorro virou um dos momentos mais lembrados dos games."
+    },
+    {
+      "id": "f127",
+      "pergunta": "O que o sapo de Frogger precisa fazer?",
+      "alternativas": ["Atravessar uma rodovia e um rio", "Comer moscas", "Subir em árvores", "Fugir de cobras", "Derrotar um chefe"],
+      "resposta_correta": 0,
+      "explicacao": "Frogger foi lançado pela Konami em 1981."
+    },
+    {
+      "id": "f128",
+      "pergunta": "Em qual jogo Mario apareceu pela primeira vez?",
+      "alternativas": ["Donkey Kong", "Super Mario Bros.", "Mario Bros.", "Super Mario World", "Wrecking Crew"],
+      "resposta_correta": 0,
+      "explicacao": "Mario estreou em Donkey Kong, de 1981, como o carpinteiro Jumpman."
+    },
+    {
+      "id": "f129",
+      "pergunta": "Quem é a protagonista arqueóloga da série Tomb Raider?",
+      "alternativas": ["Lara Croft", "Nathan Drake", "Aloy", "Samus Aran", "Chun-Li"],
+      "resposta_correta": 0,
+      "explicacao": "Lara Croft estreou em 1996 e virou um ícone dos videogames."
+    },
+    {
+      "id": "f130",
+      "pergunta": "Qual é o nome da cidade submarina de BioShock?",
+      "alternativas": ["Rapture", "Atlantis", "Columbia", "City 17", "Vault 13"],
+      "resposta_correta": 0,
+      "explicacao": "Rapture foi construída por Andrew Ryan como utopia isolada."
+    },
+    {
+      "id": "f131",
+      "pergunta": "Qual é o sobrenome do comandante da série Mass Effect?",
+      "alternativas": ["Shepard", "Hawke", "Marston", "Vakarian", "Sanders"],
+      "resposta_correta": 0,
+      "explicacao": "Shepard comanda a nave Normandy contra os Reapers."
+    },
+    {
+      "id": "f132",
+      "pergunta": "Como se chama o aparelho que o protagonista de Fallout usa no pulso?",
+      "alternativas": ["Pip-Boy", "Gameboy", "Smartwatch", "PDA", "Terminal"],
+      "resposta_correta": 0,
+      "explicacao": "O Pip-Boy mostra inventário, mapa e missões do jogador."
+    },
+    {
+      "id": "f133",
+      "pergunta": "Qual ator interpreta Johnny Silverhand em Cyberpunk 2077?",
+      "alternativas": ["Keanu Reeves", "Tom Cruise", "Brad Pitt", "Matt Damon", "Hugh Jackman"],
+      "resposta_correta": 0,
+      "explicacao": "Keanu Reeves foi anunciado na E3 2019 com direito a aplausos."
+    },
+    {
+      "id": "f134",
+      "pergunta": "Quem é o criador de Death Stranding e Metal Gear?",
+      "alternativas": ["Hideo Kojima", "Shigeru Miyamoto", "Hidetaka Miyazaki", "Yuji Naka", "Shinji Mikami"],
+      "resposta_correta": 0,
+      "explicacao": "Kojima fundou a Kojima Productions após deixar a Konami."
+    },
+    {
+      "id": "f135",
+      "pergunta": "Qual é o nome do inimigo marrom em forma de cogumelo que Mario derrota pulando em cima?",
+      "alternativas": ["Goomba", "Koopa Troopa", "Boo", "Piranha Plant", "Shy Guy"],
+      "resposta_correta": 0,
+      "explicacao": "O Goomba é um dos primeiros inimigos de Super Mario Bros."
+    },
+    {
+      "id": "f136",
+      "pergunta": "Qual personagem é o parceiro de Donkey Kong em Donkey Kong Country?",
+      "alternativas": ["Diddy Kong", "Dixie Kong", "Funky Kong", "Cranky Kong", "Lanky Kong"],
+      "resposta_correta": 0,
+      "explicacao": "Diddy Kong estreou em Donkey Kong Country, de 1994."
+    },
+    {
+      "id": "f137",
+      "pergunta": "Qual fada acompanha Link em Ocarina of Time?",
+      "alternativas": ["Navi", "Tatl", "Midna", "Ciela", "Fi"],
+      "resposta_correta": 0,
+      "explicacao": "Navi dá dicas ao jogador gritando \"Hey, listen!\"."
+    },
+    {
+      "id": "f138",
+      "pergunta": "Quem entrega o primeiro Pokémon ao jogador em Kanto?",
+      "alternativas": ["Professor Oak (Carvalho)", "Professor Elm", "Professor Birch", "Professor Rowan", "Professor Juniper"],
+      "resposta_correta": 0,
+      "explicacao": "Em português, o nome do professor é Carvalho."
+    },
+    {
+      "id": "f139",
+      "pergunta": "O que diferencia Fortnite de outros battle royale populares?",
+      "alternativas": ["Construção de estruturas", "Dirigir tanques", "Jogar em primeira pessoa", "Possuir apenas armas brancas", "Ter mapa fixo e sem eventos"],
+      "resposta_correta": 0,
+      "explicacao": "A construção rápida virou marca da jogabilidade."
+    },
+    {
+      "id": "f140",
+      "pergunta": "Qual é a cor tradicional da roupa de Link?",
+      "alternativas": ["Verde", "Azul", "Vermelha", "Amarela", "Roxa"],
+      "resposta_correta": 0,
+      "explicacao": "O gorro verde de Link é um dos símbolos da série."
+    },
+    {
+      "id": "f141",
+      "pergunta": "Qual é a cor do chapéu e da camisa de Mario?",
+      "alternativas": ["Vermelho", "Verde", "Azul", "Amarelo", "Laranja"],
+      "resposta_correta": 0,
+      "explicacao": "As cores foram escolhidas para destacar o personagem em telas pequenas."
+    },
+    {
+      "id": "f142",
+      "pergunta": "Quantos Pokémon existem na primeira geração (Kanto)?",
+      "alternativas": ["151", "100", "150", "251", "200"],
+      "resposta_correta": 0,
+      "explicacao": "O número 151 é Mew, o Pokémon secreto."
+    },
+    {
+      "id": "f143",
+      "pergunta": "Qual pedra evolui Pikachu para Raichu?",
+      "alternativas": ["Pedra do Trovão", "Pedra do Fogo", "Pedra da Água", "Pedra da Folha", "Pedra da Lua"],
+      "resposta_correta": 0,
+      "explicacao": "A Pedra do Trovão é usada em Pikachu e Eevee, entre outros."
+    },
+    {
+      "id": "f144",
+      "pergunta": "Qual minério fornece as melhores ferramentas antes do Netherite em Minecraft?",
+      "alternativas": ["Diamante", "Ferro", "Ouro", "Esmeralda", "Cobre"],
+      "resposta_correta": 0,
+      "explicacao": "O Netherite é uma melhoria feita a partir de equipamentos de diamante."
+    },
+    {
+      "id": "f145",
+      "pergunta": "Em qual país foi criado o Tetris?",
+      "alternativas": ["União Soviética (Rússia)", "Japão", "Estados Unidos", "Alemanha", "Reino Unido"],
+      "resposta_correta": 0,
+      "explicacao": "Alexey Pajitnov criou o jogo em Moscou, em 1984."
+    },
+    {
+      "id": "f146",
+      "pergunta": "Quantas vidas o jogador tem ao começar Super Mario Bros. (NES)?",
+      "alternativas": ["3", "1", "5", "7", "9"],
+      "resposta_correta": 0,
+      "explicacao": "Ao perder todas as vidas, aparece a tela de Game Over."
+    },
+    {
+      "id": "f147",
+      "pergunta": "Qual é a espada lendária de Link capaz de derrotar o mal?",
+      "alternativas": ["Master Sword", "Espada Rubra", "Espada Kokiri", "Fire Sword", "Espada Gigante"],
+      "resposta_correta": 0,
+      "explicacao": "A Master Sword é conhecida como a \"Lâmina que repele o mal\"."
+    },
+    {
+      "id": "f148",
+      "pergunta": "Qual lutadora chinesa de Street Fighter é famosa pelo Spinning Bird Kick?",
+      "alternativas": ["Chun-Li", "Cammy", "Sakura", "Mai Shiranui", "Juri"],
+      "resposta_correta": 0,
+      "explicacao": "Chun-Li é uma das primeiras personagens femininas de destaque nos jogos de luta."
+    },
+    {
+      "id": "f149",
+      "pergunta": "Qual esporte é praticado com carros em Rocket League?",
+      "alternativas": ["Futebol", "Basquete", "Vôlei", "Hóquei", "Rugby"],
+      "resposta_correta": 0,
+      "explicacao": "Os carros acertam uma grande bola para marcar gols."
+    },
+    {
+      "id": "f150",
+      "pergunta": "Qual é a mecânica principal de Candy Crush?",
+      "alternativas": ["Combinar três ou mais doces iguais", "Plantar doces", "Montar cardápios", "Lutar contra monstros", "Cozinhar receitas"],
+      "resposta_correta": 0,
+      "explicacao": "A King lançou o jogo em 2012 e ele virou febre global."
+    }
+  ],
+  "media": [
+    {
+      "id": "m1",
+      "pergunta": "Qual era o nome original do personagem que depois virou Mario, em Donkey Kong?",
+      "alternativas": ["Jumpman", "Mr. Video", "Carpenter Bob", "Plumber Pete", "Mario Mario"],
+      "resposta_correta": 0,
+      "explicacao": "O nome Mario veio de Mario Segale, dono do galpão alugado pela Nintendo of America."
+    },
+    {
+      "id": "m2",
+      "pergunta": "Qual era o nome original japonês de Pac-Man?",
+      "alternativas": ["Puck-Man", "Pac-Boy", "Ghost Eater", "Dot-Man", "Maze-Man"],
+      "resposta_correta": 0,
+      "explicacao": "O nome foi alterado no ocidente para evitar que vândalos transformassem o \"P\" em \"F\" nos gabinetes."
+    },
+    {
+      "id": "m3",
+      "pergunta": "Em homenagem a quem o criador escolheu o nome da Princesa Zelda?",
+      "alternativas": ["Zelda Fitzgerald, esposa do escritor F. Scott Fitzgerald", "Uma tia de Miyamoto", "Uma deusa grega", "Uma cidade japonesa", "Uma atriz de cinema mudo"],
+      "resposta_correta": 0,
+      "explicacao": "Shigeru Miyamoto disse gostar do som do nome de Zelda Fitzgerald."
+    },
+    {
+      "id": "m4",
+      "pergunta": "O que Super Mario Bros. reaproveitava para economizar memória?",
+      "alternativas": ["Nuvens e arbustos usam o mesmo desenho com cores diferentes", "Goombas e Koopas usam o mesmo sprite", "Os canos e os blocos usam a mesma textura", "O castelo e o chão usam o mesmo desenho", "As moedas e as estrelas usam a mesma animação"],
+      "resposta_correta": 0,
+      "explicacao": "Com a limitação do cartucho do NES, os programadores mudaram apenas a paleta de cores."
+    },
+    {
+      "id": "m5",
+      "pergunta": "A música \"Type A\" de Tetris é baseada em qual canção?",
+      "alternativas": ["Korobeiniki, canção folclórica russa", "Kalinka", "Katyusha", "Ode à Alegria", "Marcha Imperial"],
+      "resposta_correta": 0,
+      "explicacao": "A versão do Game Boy popularizou essa melodia em todo o mundo."
+    },
+    {
+      "id": "m6",
+      "pergunta": "Qual Pokémon foi adicionado ao jogo quase no fim do desenvolvimento, por um programador, sem aviso à equipe?",
+      "alternativas": ["Mew", "Mewtwo", "Celebi", "Ditto", "Jirachi"],
+      "resposta_correta": 0,
+      "explicacao": "Shigeki Morimoto aproveitou o espaço livre no cartucho depois de remover as ferramentas de depuração."
+    },
+    {
+      "id": "m7",
+      "pergunta": "Qual \"Pokémon glitch\" ficou famoso em Pokémon Red e Blue por ser acessado pela costa de Cinnabar Island?",
+      "alternativas": ["MissingNo.", "Porygon", "Unown", "Ditto", "Ovo estranho"],
+      "resposta_correta": 0,
+      "explicacao": "MissingNo. aparece por um erro de programação e pode alterar itens do inventário."
+    },
+    {
+      "id": "m8",
+      "pergunta": "Em Pokémon Gold e Silver, quantas insígnias de ginásio o jogador pode conquistar no total?",
+      "alternativas": ["16", "8", "12", "14", "18"],
+      "resposta_correta": 0,
+      "explicacao": "Depois de enfrentar a Liga de Johto, o jogador pode viajar para Kanto e conquistar mais 8 insígnias."
+    },
+    {
+      "id": "m9",
+      "pergunta": "Qual Pokémon deu nome ao episódio do anime de 1997 que causou convulsões em crianças no Japão?",
+      "alternativas": ["Porygon", "Pikachu", "Electrode", "Voltorb", "Magnemite"],
+      "resposta_correta": 0,
+      "explicacao": "O episódio exibiu luzes piscantes intensas e foi retirado do ar."
+    },
+    {
+      "id": "m10",
+      "pergunta": "Quantas estrelas existem no total em Super Mario 64?",
+      "alternativas": ["120", "100", "150", "96", "64"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo tem 15 mundos e 120 estrelas de poder."
+    },
+    {
+      "id": "m11",
+      "pergunta": "Quem dublou o Mario por quase 30 anos, até se afastar do papel em 2023?",
+      "alternativas": ["Charles Martinet", "Kevin Afghani", "Jack Black", "Chris Pratt", "Dan Castellaneta"],
+      "resposta_correta": 0,
+      "explicacao": "Martinet passou a atuar como embaixador do Mario, e Kevin Afghani assumiu a voz."
+    },
+    {
+      "id": "m12",
+      "pergunta": "Quem criou o Minecraft?",
+      "alternativas": ["Markus \"Notch\" Persson", "Jens Bergensten", "Gabe Newell", "Eric Barone", "Toby Fox"],
+      "resposta_correta": 0,
+      "explicacao": "Notch lançou as primeiras versões em 2009 e depois vendeu a Mojang para a Microsoft."
+    },
+    {
+      "id": "m13",
+      "pergunta": "Segundo a história do jogo, como surgiu o design do Creeper?",
+      "alternativas": ["De um erro ao tentar modelar um porco, com altura e largura trocadas", "De um desenho feito por um fã", "De uma competição de design", "De uma cópia de monstros de Doom", "De um cacto aperfeiçoado"],
+      "resposta_correta": 0,
+      "explicacao": "O resultado inesperado ficou tão interessante que virou um dos monstros mais famosos do jogo."
+    },
+    {
+      "id": "m14",
+      "pergunta": "Counter-Strike nasceu como modificação (mod) de qual jogo?",
+      "alternativas": ["Half-Life", "Quake III", "Doom", "Unreal Tournament", "Rainbow Six"],
+      "resposta_correta": 0,
+      "explicacao": "Foi criado por Minh \"Gooseman\" Le e Jess Cliffe e depois comprado pela Valve."
+    },
+    {
+      "id": "m15",
+      "pergunta": "Dota começou como modificação de qual jogo?",
+      "alternativas": ["Warcraft III", "StarCraft", "Age of Empires", "Diablo II", "Command & Conquer"],
+      "resposta_correta": 0,
+      "explicacao": "A ideia veio do mapa Aeon of Strife, de StarCraft, e depois evoluiu para Defense of the Ancients."
+    },
+    {
+      "id": "m16",
+      "pergunta": "Overwatch nasceu a partir de qual projeto cancelado da Blizzard?",
+      "alternativas": ["Titan", "Ghost", "Nomad", "Phoenix", "Prometheus"],
+      "resposta_correta": 0,
+      "explicacao": "Parte das ideias e da equipe do projeto Titan foi reaproveitada para criar Overwatch."
+    },
+    {
+      "id": "m17",
+      "pergunta": "Como surgiram os combos em Street Fighter II?",
+      "alternativas": ["Foram uma falha de programação descoberta e mantida", "Planejados desde o primeiro protótipo", "Copiados de Mortal Kombat", "Sugeridos por jogadores profissionais", "Criados com um código secreto"],
+      "resposta_correta": 0,
+      "explicacao": "A equipe percebeu que era possível encadear golpes e decidiu manter o recurso."
+    },
+    {
+      "id": "m18",
+      "pergunta": "Qual personagem secreto de Street Fighter surgiu em Super Street Fighter II Turbo?",
+      "alternativas": ["Akuma", "Sagat", "M. Bison", "Gill", "Dan"],
+      "resposta_correta": 0,
+      "explicacao": "Akuma foi um chefe oculto, difícil de encontrar, e ficou muito popular."
+    },
+    {
+      "id": "m19",
+      "pergunta": "Que técnica deu origem a Scorpion e Sub-Zero em Mortal Kombat?",
+      "alternativas": ["Troca de paleta (palette swap)", "Reflexo de sprites", "Rotoscopia", "Recorte manual", "Clonagem de código"],
+      "resposta_correta": 0,
+      "explicacao": "Os ninjas usavam o mesmo desenho em cores diferentes para economizar espaço."
+    },
+    {
+      "id": "m20",
+      "pergunta": "Qual era o nome de desenvolvimento do primeiro GTA?",
+      "alternativas": ["Race'n'Chase", "Car Wars", "Street Mayhem", "Crime City", "Outlaw Cars"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo foi criado pela DMA Design, na Escócia."
+    },
+    {
+      "id": "m21",
+      "pergunta": "Qual é o nome original japonês de Resident Evil?",
+      "alternativas": ["Biohazard", "Zombie Land", "Umbrella", "Outbreak", "Terror Mansion"],
+      "resposta_correta": 0,
+      "explicacao": "O nome foi trocado nos EUA porque \"Biohazard\" não pôde ser registrado."
+    },
+    {
+      "id": "m22",
+      "pergunta": "Qual limitação técnica a névoa de Silent Hill ajudava a disfarçar?",
+      "alternativas": ["A distância de renderização do PlayStation", "A falta de som", "A baixa memória de texturas", "O número de inimigos", "O tempo de carregamento"],
+      "resposta_correta": 0,
+      "explicacao": "A névoa também ajudou a criar o clima de tensão e horror."
+    },
+    {
+      "id": "m23",
+      "pergunta": "Qual criatura icônica com uma pirâmide na cabeça aparece em Silent Hill 2?",
+      "alternativas": ["Pyramid Head", "Nemesis", "Mr. X", "Lisa Trevor", "Pale Man"],
+      "resposta_correta": 0,
+      "explicacao": "Pyramid Head é uma figura simbólica ligada ao protagonista James Sunderland."
+    },
+    {
+      "id": "m24",
+      "pergunta": "O que as animações de abrir portas dos primeiros Resident Evil escondiam?",
+      "alternativas": ["Carregamento de cenários", "Cenas de combate", "Um modo secreto", "Efeitos sonoros", "Atualizações do mapa"],
+      "resposta_correta": 0,
+      "explicacao": "Elas disfarçavam o tempo necessário para o console carregar a próxima área."
+    },
+    {
+      "id": "m25",
+      "pergunta": "Qual personagem de Dark Souls é conhecido pelo gesto de \"Praise the Sun\"?",
+      "alternativas": ["Solaire de Astora", "Siegmeyer de Catarina", "Patches", "Lautrec", "Ornstein"],
+      "resposta_correta": 0,
+      "explicacao": "Solaire é um cavaleiro muito querido pela comunidade."
+    },
+    {
+      "id": "m26",
+      "pergunta": "Qual autor de As Crônicas de Gelo e Fogo colaborou com a mitologia de Elden Ring?",
+      "alternativas": ["George R. R. Martin", "Brandon Sanderson", "Neil Gaiman", "Patrick Rothfuss", "Andrzej Sapkowski"],
+      "resposta_correta": 0,
+      "explicacao": "Martin escreveu o pano de fundo do mundo, e Hidetaka Miyazaki conduziu o jogo."
+    },
+    {
+      "id": "m27",
+      "pergunta": "Em qual data Skyrim foi lançado?",
+      "alternativas": ["11/11/2011", "10/10/2010", "12/12/2012", "01/01/2011", "09/09/2011"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo saiu em 11 de novembro de 2011, data fácil de lembrar."
+    },
+    {
+      "id": "m28",
+      "pergunta": "Qual estúdio criou The Elder Scrolls V: Skyrim?",
+      "alternativas": ["Bethesda Game Studios", "Obsidian", "BioWare", "Ubisoft", "CD Projekt Red"],
+      "resposta_correta": 0,
+      "explicacao": "A Bethesda também desenvolveu a série Fallout, a partir do terceiro jogo."
+    },
+    {
+      "id": "m29",
+      "pergunta": "Qual fonte o personagem Sans usa nas falas de Undertale?",
+      "alternativas": ["Comic Sans", "Arial", "Times New Roman", "Papyrus", "Impact"],
+      "resposta_correta": 0,
+      "explicacao": "Papyrus, irmão de Sans, fala com a fonte chamada Papyrus."
+    },
+    {
+      "id": "m30",
+      "pergunta": "Quantas pessoas desenvolveram Stardew Valley no início?",
+      "alternativas": ["Uma", "Duas", "Quatro", "Dez", "Vinte"],
+      "resposta_correta": 0,
+      "explicacao": "Eric Barone, conhecido como ConcernedApe, fez a maior parte do jogo sozinho."
+    },
+    {
+      "id": "m31",
+      "pergunta": "Qual era o nome japonês de Animal Crossing?",
+      "alternativas": ["Dōbutsu no Mori (Floresta dos Animais)", "Cruzamento Animal", "Vila dos Bichos", "Ilha Animal", "Terra dos Animais"],
+      "resposta_correta": 0,
+      "explicacao": "O primeiro jogo saiu no Nintendo 64 apenas no Japão, em 2001."
+    },
+    {
+      "id": "m32",
+      "pergunta": "De que cor Kirby foi desenhado na capa americana de Kirby's Dream Land, diferente do rosa planejado?",
+      "alternativas": ["Branco", "Amarelo", "Laranja", "Azul", "Verde"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo do Game Boy era em preto e branco, e as primeiras artes ocidentais variaram a cor."
+    },
+    {
+      "id": "m33",
+      "pergunta": "Quem criou a série Super Smash Bros.?",
+      "alternativas": ["Masahiro Sakurai", "Shigeru Miyamoto", "Satoru Iwata", "Eiji Aonuma", "Takashi Tezuka"],
+      "resposta_correta": 0,
+      "explicacao": "Sakurai também criou Kirby, e Iwata programou o protótipo de Smash."
+    },
+    {
+      "id": "m34",
+      "pergunta": "Em qual console foi lançado o primeiro Mario Kart, em 1992?",
+      "alternativas": ["Super Nintendo", "NES", "Nintendo 64", "Game Boy", "GameCube"],
+      "resposta_correta": 0,
+      "explicacao": "Super Mario Kart popularizou o gênero de corrida de kart."
+    },
+    {
+      "id": "m35",
+      "pergunta": "Qual acessório era necessário para jogar Duck Hunt no NES?",
+      "alternativas": ["Zapper (pistola de luz)", "R.O.B.", "Power Pad", "Power Glove", "Joystick de arcade"],
+      "resposta_correta": 0,
+      "explicacao": "O Zapper detectava a luz da tela para registrar os acertos."
+    },
+    {
+      "id": "m36",
+      "pergunta": "Quem fundou a Atari com Ted Dabney?",
+      "alternativas": ["Nolan Bushnell", "Steve Jobs", "Ralph Baer", "Allan Alcorn", "Trip Hawkins"],
+      "resposta_correta": 0,
+      "explicacao": "Allan Alcorn criou Pong, e Ralph Baer foi pioneiro dos consoles domésticos."
+    },
+    {
+      "id": "m37",
+      "pergunta": "Onde a Atari enterrou milhares de cartuchos de E.T., após o fracasso do jogo?",
+      "alternativas": ["Alamogordo, Novo México", "Las Vegas, Nevada", "Los Angeles, Califórnia", "Phoenix, Arizona", "Austin, Texas"],
+      "resposta_correta": 0,
+      "explicacao": "Os cartuchos foram escavados e confirmados em 2014."
+    },
+    {
+      "id": "m38",
+      "pergunta": "Por que os invasores de Space Invaders aceleram ao serem destruídos?",
+      "alternativas": ["O hardware ficava mais rápido com menos inimigos para desenhar", "Foi um bug inserido de propósito", "Eles recebiam energia extra", "O jogo ativava o modo fúria", "Os inimigos eram programados para fugir"],
+      "resposta_correta": 0,
+      "explicacao": "O criador Tomohiro Nishikado resolveu manter a limitação como característica do jogo."
+    },
+    {
+      "id": "m39",
+      "pergunta": "Em qual alimento o criador de Pac-Man, Toru Iwatani, disse ter se inspirado?",
+      "alternativas": ["Uma pizza com uma fatia faltando", "Um queijo", "Um biscoito", "Uma panqueca", "Uma melancia"],
+      "resposta_correta": 0,
+      "explicacao": "A história é contada pelo próprio Iwatani em entrevistas."
+    },
+    {
+      "id": "m40",
+      "pergunta": "O que acontece no nível 256 do Pac-Man original?",
+      "alternativas": ["A tela se corrompe pela metade", "Surge Ms. Pac-Man", "Os fantasmas desaparecem", "O jogo reinicia", "A tela fica toda branca"],
+      "resposta_correta": 0,
+      "explicacao": "Esse erro, chamado \"kill screen\", torna impossível terminar o nível."
+    },
+    {
+      "id": "m41",
+      "pergunta": "Quem programou o primeiro Sonic the Hedgehog?",
+      "alternativas": ["Yuji Naka", "Naoto Ohshima", "Hirokazu Yasuhara", "Masato Nakamura", "Yu Suzuki"],
+      "resposta_correta": 0,
+      "explicacao": "Ohshima criou o visual do Sonic e Yasuhara projetou as fases."
+    },
+    {
+      "id": "m42",
+      "pergunta": "Quantos anéis são necessários para virar Super Sonic nos jogos clássicos?",
+      "alternativas": ["50", "25", "100", "75", "10"],
+      "resposta_correta": 0,
+      "explicacao": "Além dos anéis, é preciso reunir as sete Esmeraldas do Caos."
+    },
+    {
+      "id": "m43",
+      "pergunta": "Qual é a surpresa que Metroid (1986) guarda para quem termina o jogo rapidamente?",
+      "alternativas": ["Samus tira a armadura e revela ser mulher", "Surge Ridley sem armadura", "Aparece o Baby Metroid", "Abre-se um mundo secreto", "O jogador ganha o Space Jump"],
+      "resposta_correta": 0,
+      "explicacao": "A revelação surpreendeu a maioria dos jogadores na época."
+    },
+    {
+      "id": "m44",
+      "pergunta": "Qual foi o primeiro jogo 3D da série Zelda?",
+      "alternativas": ["Ocarina of Time", "Majora's Mask", "A Link to the Past", "The Wind Waker", "Twilight Princess"],
+      "resposta_correta": 0,
+      "explicacao": "Ocarina of Time foi lançado em 1998 para o Nintendo 64."
+    },
+    {
+      "id": "m45",
+      "pergunta": "Quanto tempo o jogador tem até a Lua cair em Majora's Mask?",
+      "alternativas": ["3 dias", "1 dia", "5 dias", "7 dias", "10 dias"],
+      "resposta_correta": 0,
+      "explicacao": "O ciclo de três dias pode ser reiniciado com a Ocarina do Tempo."
+    },
+    {
+      "id": "m46",
+      "pergunta": "Quantas sementes Korok existem em Breath of the Wild?",
+      "alternativas": ["900", "500", "700", "1000", "1200"],
+      "resposta_correta": 0,
+      "explicacao": "Hestu aceita as sementes em troca de ampliação do inventário."
+    },
+    {
+      "id": "m47",
+      "pergunta": "Quantos corações são necessários para retirar a Master Sword do pedestal em Breath of the Wild?",
+      "alternativas": ["13", "10", "15", "20", "8"],
+      "resposta_correta": 0,
+      "explicacao": "O jogador deve ter no mínimo 13 corações de vida."
+    },
+    {
+      "id": "m48",
+      "pergunta": "Por que a série se chama \"Final Fantasy\"?",
+      "alternativas": ["A Square estava perto da falência e o criador achava que seria seu último jogo", "O jogo foi planejado como o último capítulo", "Foi uma referência ao chefe final", "Era uma homenagem a Final Fight", "O nome é uma tradução errada"],
+      "resposta_correta": 0,
+      "explicacao": "O sucesso do jogo salvou a empresa e deu início a uma das maiores séries do mundo."
+    },
+    {
+      "id": "m49",
+      "pergunta": "Qual personagem morre no final do primeiro disco de Final Fantasy VII?",
+      "alternativas": ["Aerith", "Tifa", "Barret", "Cid", "Red XIII"],
+      "resposta_correta": 0,
+      "explicacao": "A morte de Aerith é um dos momentos mais famosos da história dos games."
+    },
+    {
+      "id": "m50",
+      "pergunta": "Em qual instalação trabalha Gordon Freeman antes dos eventos de Half-Life?",
+      "alternativas": ["Black Mesa", "Aperture Science", "Umbrella", "Vault-Tec", "Abstergo"],
+      "resposta_correta": 0,
+      "explicacao": "Black Mesa fica no Novo México e é palco do acidente que abre a história."
+    },
+    {
+      "id": "m51",
+      "pergunta": "O que significa a sigla GLaDOS, em Portal?",
+      "alternativas": ["Genetic Lifeform and Disk Operating System", "Great Logic and Data Operating System", "General Laboratory and Disk Optimization System", "Global Logic and Defense Operating Structure", "Generic Lifeform and Digital Output System"],
+      "resposta_correta": 0,
+      "explicacao": "GLaDOS é a inteligência artificial que controla o laboratório da Aperture Science."
+    },
+    {
+      "id": "m52",
+      "pergunta": "Qual empresa constrói os abrigos nucleares de Fallout?",
+      "alternativas": ["Vault-Tec", "Black Mesa", "Aperture Science", "Umbrella", "Weyland-Yutani"],
+      "resposta_correta": 0,
+      "explicacao": "A Vault-Tec foi criada pelo universo do jogo para vender \"segurança\" pós-guerra."
+    },
+    {
+      "id": "m53",
+      "pergunta": "Qual é a frase que revela a grande reviravolta de BioShock?",
+      "alternativas": ["Would you kindly (Faça a gentileza)", "Man chooses, a slave obeys", "The cake is a lie", "War never changes", "Praise the sun"],
+      "resposta_correta": 0,
+      "explicacao": "A frase é usada ao longo do jogo para controlar o protagonista."
+    },
+    {
+      "id": "m54",
+      "pergunta": "Qual é o nome da gangue de Arthur Morgan em Red Dead Redemption 2?",
+      "alternativas": ["Gangue Van der Linde", "Gangue O'Driscoll", "Lemoyne Raiders", "Del Lobo", "Murfree Brood"],
+      "resposta_correta": 0,
+      "explicacao": "A gangue é liderada por Dutch van der Linde."
+    },
+    {
+      "id": "m55",
+      "pergunta": "Qual empresa lançou Mortal Kombat nos arcades, em 1992?",
+      "alternativas": ["Midway", "Capcom", "SNK", "Namco", "Sega"],
+      "resposta_correta": 0,
+      "explicacao": "A Midway foi uma das pioneiras do mercado de arcades."
+    },
+    {
+      "id": "m56",
+      "pergunta": "Qual era o nome do Mega Drive nos Estados Unidos?",
+      "alternativas": ["Genesis", "Saturn", "Dreamcast", "Master System", "Nomad"],
+      "resposta_correta": 0,
+      "explicacao": "O nome foi alterado porque \"Mega Drive\" não pôde ser registrado nos EUA."
+    },
+    {
+      "id": "m57",
+      "pergunta": "Quantas portas de controle tinha o Nintendo 64?",
+      "alternativas": ["4", "2", "3", "6", "8"],
+      "resposta_correta": 0,
+      "explicacao": "O quarto controle abriu espaço para partidas com até 4 jogadores locais."
+    },
+    {
+      "id": "m58",
+      "pergunta": "O PlayStation nasceu de qual projeto?",
+      "alternativas": ["Um complemento de CD-ROM para o Super Nintendo, em parceria entre Sony e Nintendo", "Um complemento para o Mega Drive", "Um console da Philips", "Um console da Atari", "Um projeto da Sony sem parceiros"],
+      "resposta_correta": 0,
+      "explicacao": "A parceria foi desfeita, e a Sony transformou o projeto em seu próprio console."
+    },
+    {
+      "id": "m59",
+      "pergunta": "Qual rapper realizou o show \"Astronomical\" dentro do Fortnite, em 2020?",
+      "alternativas": ["Travis Scott", "Drake", "Eminem", "Post Malone", "Kanye West"],
+      "resposta_correta": 0,
+      "explicacao": "Marshmello fez o primeiro show no jogo em 2019, e Ariana Grande, em 2021."
+    },
+    {
+      "id": "m60",
+      "pergunta": "Qual criatura persegue Jill Valentine durante Resident Evil 3?",
+      "alternativas": ["Nemesis", "Mr. X", "Tyrant", "Lisa Trevor", "William Birkin"],
+      "resposta_correta": 0,
+      "explicacao": "Nemesis surge de forma repetida e é um dos inimigos mais temidos da série."
+    },
+    {
+      "id": "m61",
+      "pergunta": "Qual personagem diz a famosa frase \"Jill sandwich\" no Resident Evil original?",
+      "alternativas": ["Barry Burton", "Chris Redfield", "Albert Wesker", "Rebecca Chambers", "Brad Vickers"],
+      "resposta_correta": 0,
+      "explicacao": "A dublagem do jogo ficou famosa por falas engraçadas."
+    },
+    {
+      "id": "m62",
+      "pergunta": "Qual é o primeiro hub, ou ponto de descanso principal, de Dark Souls?",
+      "alternativas": ["Santuário de Ligação do Fogo (Firelink Shrine)", "Anor Londo", "Burgo dos Mortos-Vivos", "Fortaleza de Sen", "Blighttown"],
+      "resposta_correta": 0,
+      "explicacao": "O santuário é o local de retorno do jogador entre as áreas."
+    },
+    {
+      "id": "m63",
+      "pergunta": "Como se chama o frasco de cura de Dark Souls?",
+      "alternativas": ["Estus Flask", "Elixir", "Poção Divina", "Frasco de Sangue", "Humanidade"],
+      "resposta_correta": 0,
+      "explicacao": "O Estus é restaurado em fogueiras."
+    },
+    {
+      "id": "m64",
+      "pergunta": "Qual jogo de cartas aparece em The Witcher 3?",
+      "alternativas": ["Gwent", "Triple Triad", "Hearthstone", "Magic: The Gathering", "Pazaak"],
+      "resposta_correta": 0,
+      "explicacao": "Gwent virou um jogo independente chamado Gwent: The Witcher Card Game."
+    },
+    {
+      "id": "m65",
+      "pergunta": "Os jogos de The Witcher são baseados nos livros de qual autor?",
+      "alternativas": ["Andrzej Sapkowski", "Joe Abercrombie", "Stanisław Lem", "Neil Gaiman", "George R. R. Martin"],
+      "resposta_correta": 0,
+      "explicacao": "Sapkowski é polonês e criou o universo de Geralt de Rívia."
+    },
+    {
+      "id": "m66",
+      "pergunta": "Qual ator dá a voz de Kratos em God of War (2018)?",
+      "alternativas": ["Christopher Judge", "Terrence C. Carson", "Troy Baker", "Nolan North", "Mark Hamill"],
+      "resposta_correta": 0,
+      "explicacao": "Terrence C. Carson dublou Kratos nos jogos anteriores."
+    },
+    {
+      "id": "m67",
+      "pergunta": "Qual estúdio desenvolveu God of War (2018)?",
+      "alternativas": ["Santa Monica Studio", "Naughty Dog", "Insomniac", "Sucker Punch", "Guerrilla Games"],
+      "resposta_correta": 0,
+      "explicacao": "O estúdio mudou o foco da série para a mitologia nórdica."
+    },
+    {
+      "id": "m68",
+      "pergunta": "Qual empresa criou Halo originalmente?",
+      "alternativas": ["Bungie", "343 Industries", "id Software", "Valve", "Epic Games"],
+      "resposta_correta": 0,
+      "explicacao": "A 343 Industries assumiu a série a partir de Halo 4."
+    },
+    {
+      "id": "m69",
+      "pergunta": "Qual empresa criou Doom, em 1993?",
+      "alternativas": ["id Software", "Apogee", "Epic Games", "Valve", "3D Realms"],
+      "resposta_correta": 0,
+      "explicacao": "A id Software também criou Wolfenstein 3D e Quake."
+    },
+    {
+      "id": "m70",
+      "pergunta": "Qual brincadeira de nerds ficou famosa com Doom?",
+      "alternativas": ["Rodá-lo em aparelhos improváveis", "Terminar sem atirar", "Jogá-lo em realidade virtual desde 1990", "Trocar os demônios por personagens de desenho", "Jogá-lo sem a tela"],
+      "resposta_correta": 0,
+      "explicacao": "Doom já rodou em calculadoras, caixas eletrônicos e até em um teste de gravidez."
+    },
+    {
+      "id": "m71",
+      "pergunta": "Qual esfera falante, dublada por Stephen Merchant, acompanha Chell em Portal 2?",
+      "alternativas": ["Wheatley", "Space Core", "Fact Core", "Adventure Core", "Atlas"],
+      "resposta_correta": 0,
+      "explicacao": "Wheatley é desastrado, e suas escolhas mudam o rumo do jogo."
+    },
+    {
+      "id": "m72",
+      "pergunta": "Qual é o nome da cidade controlada pela Combine em Half-Life 2?",
+      "alternativas": ["City 17", "Black Mesa", "Rapture", "Raccoon City", "Vice City"],
+      "resposta_correta": 0,
+      "explicacao": "City 17 foi construída ao redor de uma Cidadela gigante."
+    },
+    {
+      "id": "m73",
+      "pergunta": "Qual era a profissão de Gordon Freeman antes de Half-Life?",
+      "alternativas": ["Físico teórico", "Engenheiro de software", "Médico", "Soldado", "Segurança"],
+      "resposta_correta": 0,
+      "explicacao": "Freeman tem doutorado pelo MIT e nunca fala durante o jogo."
+    },
+    {
+      "id": "m74",
+      "pergunta": "Qual mapa clássico de League of Legends tem três rotas (lanes)?",
+      "alternativas": ["Summoner's Rift", "Howling Abyss", "Twisted Treeline", "Crystal Scar", "Nexus Blitz"],
+      "resposta_correta": 0,
+      "explicacao": "O Howling Abyss é o mapa do modo ARAM, com uma rota única."
+    },
+    {
+      "id": "m75",
+      "pergunta": "Como se chama o campeonato mundial de Dota 2?",
+      "alternativas": ["The International", "Worlds", "The Major", "BLAST", "Intel Extreme Masters"],
+      "resposta_correta": 0,
+      "explicacao": "O prêmio do torneio chegou a passar de 40 milhões de dólares em 2021."
+    },
+    {
+      "id": "m76",
+      "pergunta": "Qual mapa icônico de Counter-Strike tem os pontos \"Long A\" e \"Catwalk\"?",
+      "alternativas": ["Dust2", "Mirage", "Inferno", "Nuke", "Cache"],
+      "resposta_correta": 0,
+      "explicacao": "Dust2 é considerado um dos mapas mais jogados da história."
+    },
+    {
+      "id": "m77",
+      "pergunta": "Qual heroína de Overwatch viaja no tempo?",
+      "alternativas": ["Tracer", "Mercy", "Widowmaker", "D.Va", "Sombra"],
+      "resposta_correta": 0,
+      "explicacao": "Tracer é a personagem mais associada ao jogo."
+    },
+    {
+      "id": "m78",
+      "pergunta": "Qual personagem da Sega estreou em Super Smash Bros. Brawl?",
+      "alternativas": ["Sonic", "Tails", "Knuckles", "Shadow", "Ryu"],
+      "resposta_correta": 0,
+      "explicacao": "Sonic foi anunciado como surpresa, e sua presença virou um marco entre Nintendo e Sega."
+    },
+    {
+      "id": "m79",
+      "pergunta": "Qual pista com visual de arco-íris no espaço é famosa pela dificuldade em Mario Kart?",
+      "alternativas": ["Rainbow Road", "Bowser's Castle", "Moo Moo Meadows", "Luigi Circuit", "Toad's Turnpike"],
+      "resposta_correta": 0,
+      "explicacao": "Rainbow Road aparece em quase todos os jogos da série."
+    },
+    {
+      "id": "m80",
+      "pergunta": "Qual é o primeiro Pokémon na Pokédex Nacional?",
+      "alternativas": ["Bulbasaur", "Pikachu", "Rhydon", "Mew", "Charmander"],
+      "resposta_correta": 0,
+      "explicacao": "Bulbasaur é o número 001 e Mew é o 151 da primeira geração."
+    },
+    {
+      "id": "m81",
+      "pergunta": "Qual Pokémon foi criado a partir do DNA de Mew?",
+      "alternativas": ["Mewtwo", "Ditto", "Celebi", "Deoxys", "Genesect"],
+      "resposta_correta": 0,
+      "explicacao": "Mewtwo foi criado em laboratório pela Equipe Rocket."
+    },
+    {
+      "id": "m82",
+      "pergunta": "Em qual geração de Pokémon surgiram os Pokémon brilhantes (shiny)?",
+      "alternativas": ["Segunda (Gold e Silver)", "Primeira", "Terceira", "Quarta", "Quinta"],
+      "resposta_correta": 0,
+      "explicacao": "O Gyarados vermelho do Lago da Fúria é o shiny mais famoso da geração."
+    },
+    {
+      "id": "m83",
+      "pergunta": "Quantos tipos de Pokémon existem atualmente?",
+      "alternativas": ["18", "15", "16", "17", "20"],
+      "resposta_correta": 0,
+      "explicacao": "O tipo Fada foi o último adicionado, na sexta geração."
+    },
+    {
+      "id": "m84",
+      "pergunta": "Qual tipo de Pokémon foi adicionado na sexta geração (X e Y)?",
+      "alternativas": ["Fada", "Sombrio", "Aço", "Dragão", "Gelo"],
+      "resposta_correta": 0,
+      "explicacao": "Os tipos Sombrio e Aço haviam sido adicionados na segunda geração."
+    },
+    {
+      "id": "m85",
+      "pergunta": "Qual é o nome da ilha onde se passa The Legend of Zelda: Link's Awakening?",
+      "alternativas": ["Koholint", "Outset", "Holodrum", "Labrynna", "Termina"],
+      "resposta_correta": 0,
+      "explicacao": "Link acorda na ilha após um naufrágio."
+    },
+    {
+      "id": "m86",
+      "pergunta": "Qual estilo gráfico marcou The Wind Waker?",
+      "alternativas": ["Cel-shading", "Voxels", "Pixel art 8 bits", "Realismo fotográfico", "Rotoscopia"],
+      "resposta_correta": 0,
+      "explicacao": "O visual de desenho animado dividiu fãs no lançamento, mas envelheceu muito bem."
+    },
+    {
+      "id": "m87",
+      "pergunta": "Qual jogo de Zelda tem pontos de experiência e visão lateral, com estilo de RPG?",
+      "alternativas": ["Zelda II: The Adventure of Link", "A Link to the Past", "Link's Awakening", "Four Swords", "The Minish Cap"],
+      "resposta_correta": 0,
+      "explicacao": "Zelda II foi lançado em 1987 e se diferencia muito do primeiro jogo."
+    },
+    {
+      "id": "m88",
+      "pergunta": "Qual ferramenta Mario usa em Super Mario Sunshine para limpar sujeira?",
+      "alternativas": ["F.L.U.D.D.", "Poltergust", "Cappy", "Strato-Pack", "Aqua-Pak"],
+      "resposta_correta": 0,
+      "explicacao": "O aparelho esguicha água e permite flutuar por alguns segundos."
+    },
+    {
+      "id": "m89",
+      "pergunta": "Qual item transforma Mario em guaxinim em Super Mario Bros. 3?",
+      "alternativas": ["Super Folha (Super Leaf)", "Pena", "Flor de Gelo", "Mini Cogumelo", "Sino"],
+      "resposta_correta": 0,
+      "explicacao": "Com a cauda, ele pode girar e planar."
+    },
+    {
+      "id": "m90",
+      "pergunta": "Qual estúdio desenvolveu a série Kirby?",
+      "alternativas": ["HAL Laboratory", "Nintendo EAD", "Game Freak", "Intelligent Systems", "Retro Studios"],
+      "resposta_correta": 0,
+      "explicacao": "HAL também ajudou a criar Super Smash Bros."
+    },
+    {
+      "id": "m91",
+      "pergunta": "Qual animal é K.K. Slider em Animal Crossing?",
+      "alternativas": ["Cachorro", "Gato", "Coelho", "Urso", "Raposa"],
+      "resposta_correta": 0,
+      "explicacao": "K.K. toca música todos os sábados à noite."
+    },
+    {
+      "id": "m92",
+      "pergunta": "Como se chama a cidade onde se passa Stardew Valley?",
+      "alternativas": ["Pelican Town", "Ferngill", "Willow Creek", "Cinder Falls", "Pallet Town"],
+      "resposta_correta": 0,
+      "explicacao": "Ferngill é o nome da república onde o jogo se passa."
+    },
+    {
+      "id": "m93",
+      "pergunta": "Qual é o chefe final de Terraria?",
+      "alternativas": ["Moon Lord", "Wall of Flesh", "Eye of Cthulhu", "Golem", "Plantera"],
+      "resposta_correta": 0,
+      "explicacao": "O Moon Lord é um monstro cósmico que representa a etapa final do jogo."
+    },
+    {
+      "id": "m94",
+      "pergunta": "Como se chama o reino subterrâneo de Hollow Knight?",
+      "alternativas": ["Hallownest", "Dirtmouth", "Greenpath", "Deepnest", "Kingdom's Edge"],
+      "resposta_correta": 0,
+      "explicacao": "Dirtmouth é a pequena vila na superfície, de onde o jogador desce."
+    },
+    {
+      "id": "m95",
+      "pergunta": "Em qual ano foi lançado Hollow Knight: Silksong?",
+      "alternativas": ["2025", "2023", "2024", "2026", "2022"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo foi anunciado em 2019 e esperado por anos pelos fãs."
+    },
+    {
+      "id": "m96",
+      "pergunta": "Qual montanha Madeline escala em Celeste?",
+      "alternativas": ["Monte Celeste", "Monte Everest", "Monte Fuji", "Monte Olimpo", "Kilimanjaro"],
+      "resposta_correta": 0,
+      "explicacao": "A subida representa os problemas internos da protagonista."
+    },
+    {
+      "id": "m97",
+      "pergunta": "Por que Cuphead e Mugman entram em dívida com o Diabo?",
+      "alternativas": ["Perderam uma aposta e arriscaram suas almas no cassino", "Roubaram uma caixa do cassino", "Venderam a casa", "Quebraram um contrato antigo", "Fizeram um pacto para ficarem ricos"],
+      "resposta_correta": 0,
+      "explicacao": "Para quitar a dívida, eles precisam coletar os contratos de almas."
+    },
+    {
+      "id": "m98",
+      "pergunta": "Quem criou Undertale?",
+      "alternativas": ["Toby Fox", "Eric Barone", "Edmund McMillen", "Team Cherry", "Matt Thorson"],
+      "resposta_correta": 0,
+      "explicacao": "Toby Fox também compôs a trilha sonora do jogo."
+    },
+    {
+      "id": "m99",
+      "pergunta": "Qual estúdio criou Among Us?",
+      "alternativas": ["InnerSloth", "Mojang", "Supercell", "Re-Logic", "Team17"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo foi lançado em 2018, mas explodiu em popularidade em 2020."
+    },
+    {
+      "id": "m100",
+      "pergunta": "Quem criou The Sims?",
+      "alternativas": ["Will Wright", "Peter Molyneux", "Sid Meier", "Richard Garriott", "Tim Schafer"],
+      "resposta_correta": 0,
+      "explicacao": "Will Wright também criou SimCity."
+    },
+    {
+      "id": "m101",
+      "pergunta": "Como se chama o cristal verde que fica sobre a cabeça dos Sims?",
+      "alternativas": ["Plumbob", "Simgem", "Plumbum", "Olho de diamante", "Cristal vital"],
+      "resposta_correta": 0,
+      "explicacao": "O plumbob muda de cor de acordo com o humor do Sim."
+    },
+    {
+      "id": "m102",
+      "pergunta": "Qual é a primeira zona de Sonic the Hedgehog?",
+      "alternativas": ["Green Hill Zone", "Emerald Hill Zone", "Marble Zone", "Casino Night Zone", "Chemical Plant Zone"],
+      "resposta_correta": 0,
+      "explicacao": "Green Hill é uma das fases mais famosas dos videogames."
+    },
+    {
+      "id": "m103",
+      "pergunta": "Qual máscara protege Crash Bandicoot nos jogos?",
+      "alternativas": ["Aku Aku", "Uka Uka", "Ripper Roo", "Tiny Tiger", "N. Gin"],
+      "resposta_correta": 0,
+      "explicacao": "Uka Uka é a máscara maligna, irmã de Aku Aku."
+    },
+    {
+      "id": "m104",
+      "pergunta": "Qual é o protagonista de Final Fantasy X?",
+      "alternativas": ["Tidus", "Cloud", "Squall", "Zidane", "Vaan"],
+      "resposta_correta": 0,
+      "explicacao": "Tidus é um jogador de blitzball que chega ao mundo de Spira."
+    },
+    {
+      "id": "m105",
+      "pergunta": "Qual criatura com pompom aparece com frequência em Final Fantasy?",
+      "alternativas": ["Moogle", "Chocobo", "Cactuar", "Tonberry", "Behemoth"],
+      "resposta_correta": 0,
+      "explicacao": "Moogles costumam ajudar o jogador em tarefas e no salvamento do progresso."
+    },
+    {
+      "id": "m106",
+      "pergunta": "Quem é o protagonista de Kingdom Hearts?",
+      "alternativas": ["Sora", "Riku", "Roxas", "Ventus", "Mickey"],
+      "resposta_correta": 0,
+      "explicacao": "Sora empunha a Keyblade, uma chave em forma de espada."
+    },
+    {
+      "id": "m107",
+      "pergunta": "Qual personagem de Street Fighter é conhecido por esticar braços e pernas?",
+      "alternativas": ["Dhalsim", "Zangief", "Blanka", "E. Honda", "Guile"],
+      "resposta_correta": 0,
+      "explicacao": "Dhalsim é um mestre de ioga indiano."
+    },
+    {
+      "id": "m108",
+      "pergunta": "Qual lutador de Street Fighter II é verde, elétrico e brasileiro?",
+      "alternativas": ["Blanka", "Zangief", "Dhalsim", "Vega", "Sagat"],
+      "resposta_correta": 0,
+      "explicacao": "Blanka nasceu em Mato Grosso e se transformou em um monstro da selva."
+    },
+    {
+      "id": "m109",
+      "pergunta": "Qual personagem de Mortal Kombat é o deus do trovão?",
+      "alternativas": ["Raiden", "Liu Kang", "Kung Lao", "Shang Tsung", "Shao Kahn"],
+      "resposta_correta": 0,
+      "explicacao": "Raiden é o protetor de Earthrealm."
+    },
+    {
+      "id": "m110",
+      "pergunta": "Qual característica física diferencia Rayman de outros heróis dos games?",
+      "alternativas": ["Não tem braços, pernas nem pescoço", "Voa com a capa", "Tem quatro braços", "É invisível", "Tem uma cauda longa"],
+      "resposta_correta": 0,
+      "explicacao": "Suas mãos e pés flutuam por conta própria."
+    },
+    {
+      "id": "m111",
+      "pergunta": "Qual estúdio britânico desenvolveu Donkey Kong Country (1994)?",
+      "alternativas": ["Rare", "HAL", "Retro Studios", "Intelligent Systems", "Game Freak"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo impressionou com gráficos pré-renderizados no Super Nintendo."
+    },
+    {
+      "id": "m112",
+      "pergunta": "Como Mega Man ganha novas armas?",
+      "alternativas": ["Derrotando chefes e absorvendo seus poderes", "Comprando em lojas", "Encontrando em baús", "Completando minijogos", "Subindo de nível"],
+      "resposta_correta": 0,
+      "explicacao": "Ordem certa de chefes torna o jogo bem mais fácil."
+    },
+    {
+      "id": "m113",
+      "pergunta": "Qual família de caçadores de vampiros é protagonista da série Castlevania?",
+      "alternativas": ["Belmont", "Morris", "Cronqvist", "Dracula", "Alucard"],
+      "resposta_correta": 0,
+      "explicacao": "Simon Belmont estreou no jogo original, de 1986."
+    },
+    {
+      "id": "m114",
+      "pergunta": "Qual é a sequência do famoso código Konami?",
+      "alternativas": ["Cima, Cima, Baixo, Baixo, Esquerda, Direita, Esquerda, Direita, B, A", "Cima, Baixo, Cima, Baixo, A, B, A, B, Start", "Esquerda, Direita, Esquerda, Direita, Cima, Baixo, B, A", "A, B, A, B, Cima, Baixo, Esquerda, Direita", "Baixo, Baixo, Cima, Cima, B, A, Esquerda, Direita"],
+      "resposta_correta": 0,
+      "explicacao": "O código surgiu em Gradius e ficou muito conhecido em Contra, com 30 vidas."
+    },
+    {
+      "id": "m115",
+      "pergunta": "Qual chefe de Metal Gear Solid \"lê\" o memory card do jogador?",
+      "alternativas": ["Psycho Mantis", "Revolver Ocelot", "Sniper Wolf", "Vulcan Raven", "Liquid Snake"],
+      "resposta_correta": 0,
+      "explicacao": "Para vencer, é preciso trocar a porta do controle."
+    },
+    {
+      "id": "m116",
+      "pergunta": "Quem é conhecido como \"PlayerUnknown\"?",
+      "alternativas": ["Brendan Greene", "Markus Persson", "Tim Sweeney", "Gabe Newell", "Hideo Kojima"],
+      "resposta_correta": 0,
+      "explicacao": "Ele ajudou a popularizar o gênero battle royale com os mods de ARMA."
+    },
+    {
+      "id": "m117",
+      "pergunta": "Qual empresa criou Genshin Impact?",
+      "alternativas": ["miHoYo", "Tencent", "NetEase", "Square Enix", "Nexon"],
+      "resposta_correta": 0,
+      "explicacao": "A empresa passou a usar o nome HoYoverse."
+    },
+    {
+      "id": "m118",
+      "pergunta": "Qual jogo venceu o prêmio de Jogo do Ano no The Game Awards de 2022?",
+      "alternativas": ["Elden Ring", "God of War Ragnarök", "Horizon Forbidden West", "Stray", "A Plague Tale: Requiem"],
+      "resposta_correta": 0,
+      "explicacao": "Elden Ring também foi sucesso comercial e de crítica."
+    },
+    {
+      "id": "m119",
+      "pergunta": "Qual RPG da Larian Studios venceu o prêmio de Jogo do Ano no The Game Awards de 2023?",
+      "alternativas": ["Baldur's Gate 3", "Alan Wake 2", "Resident Evil 4", "Tears of the Kingdom", "Marvel's Spider-Man 2"],
+      "resposta_correta": 0,
+      "explicacao": "O jogo é baseado nas regras da quinta edição de Dungeons & Dragons."
+    }
+  ],
+  "dificil": [
+    {
+      "id": "d1",
+      "pergunta": "Em Silent Hill 2 (PS2, 2001), a comunidade de fãs descobriu em 2018 um segredo oculto no código do jogo original que permite ativar um Mini-Mapa funcional na tela durante a jogatina. Qual é a combinação de botões necessária para ativar essa função?",
+      "alternativas": ["Cima, Baixo, Esquerda, Direita, L1, R1, L2, R2", "Segurar Select e pressionar: Start, L1, Select, L2, Esquerda, Quadrado", "Pressionar Start 10 vezes seguidas na sala do espelho", "L1, R1, L2, R2, Select + Start ao mesmo tempo enquanto segura o mapa", "Cima, Cima, Baixo, Baixo, Quadrado, Triângulo, L1, R1"],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Segurar Select e pressionar: Start, L1, Select, L2, Esquerda, Quadrado."
+    },
+    {
+      "id": "d2",
+      "pergunta": "Na expansão Broken Steel de Fallout 3, os desenvolvedores da Bethesda precisavam criar um trem de metrô em movimento para uma missão. Como a Gamebryo Engine não possuía suporte nativo para veículos sobre trilhos, como eles solucionaram o problema?",
+      "alternativas": ["Usaram uma animação pré-renderizada rodando em formato bink video no fundo.", "Criaram um script de teletransporte rápido quadro a quadro para o jogador.", "Equiparam um NPC invisível com um \"capacete\" modelado no formato de um vagão de trem e o fizeram correr pelos trilhos.", "Alteraram os valores de gravidade e atrito do terreno para fazer um bloco retangular deslizar.", "Modificaram o modelo da arma do jogador para disparar o cenário ao redor."],
+      "resposta_correta": 2,
+      "explicacao": "Gabarito oficial: Equiparam um NPC invisível com um \"capacete\" em formato de vagão e o fizeram correr pelos trilhos."
+    },
+    {
+      "id": "d3",
+      "pergunta": "Que funcionalidade inacreditável e totalmente funcional os desenvolvedores da Rare deixaram escondida no código-fonte da ROM de GoldenEye 007 (N64), descoberta por hackers apenas décadas após o lançamento?",
+      "alternativas": ["Um modo de jogo multiplayer online para até 8 jogadores via cabo modem.", "Um criador e editor de fases em tempo real no controle 2.", "O jogo completo Donkey Kong Country jogável em um monitor na fase Dam.", "Um emulador completo de ZX Spectrum contendo 10 jogos clássicos integrados.", "Um motor gráfico em 3D sem a névoa (\"fog\") original do Nintendo 64."],
+      "resposta_correta": 3,
+      "explicacao": "Gabarito oficial: Um emulador completo de ZX Spectrum integrado no código da ROM."
+    },
+    {
+      "id": "d4",
+      "pergunta": "No Resident Evil 2 (1998) original, o que acontece se o jogador examinar a mesa de Albert Wesker na sala dos S.T.A.R.S. exatamente 50 vezes consecutivas?",
+      "alternativas": ["O jogador obtém um filme fotográfico (\"Film D\") que revela uma foto de Rebecca Chambers com uniforme de basquete.", "Aparece um Licker gigante no teto da sala instantaneamente.", "O jogo reinicia exibindo a mensagem \"Wesker is watching you\".", "O jogador ganha munição infinita para a Magnum imediatamente.", "Toca uma versão em 8-bits da música tema do primeiro Resident Evil."],
+      "resposta_correta": 0,
+      "explicacao": "Gabarito oficial: Filme fotográfico Film D com a foto de Rebecca Chambers jogando basquete."
+    },
+    {
+      "id": "d5",
+      "pergunta": "Em Batman: Arkham Asylum (2009), a Rocksteady escondeu uma sala secreta contendo as plantas e artes conceituais da sequência (Arkham City). Por que a comunidade levou mais de um ano para encontrar essa sala?",
+      "alternativas": ["Ela exigia boiar com a capa no oceano ao redor da ilha por 5 minutos seguidos.", "Ela estava atrás de uma parede frágil na sala do Diretor Sharp que não emitia nenhuma pista visual na Visão de Detetive e exigia 3 géis explosivos aplicados no mesmo ponto.", "Só podia ser acessada jogando na dificuldade mais alta sem sofrer dano na fase do Esgoto.", "Exigia usar o Batarangue com Controle Remoto dentro de uma tubulação sem iluminação no Jardim Botânico.", "A sala só ficava visível se o relógio do console estivesse marcado à meia-noite."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Parede falsa na sala do Diretor Sharp que precisava de 3 géis explosivos sem indicação visual."
+    },
+    {
+      "id": "d6",
+      "pergunta": "Em The Witcher 3: Wild Hunt (Blood and Wine), a CD Projekt Red colocou um easter egg em um local totalmente inacessível sem o uso de mods de câmera livre ou teletransporte (no topo de uma montanha distante em Toussaint). Qual é esse easter egg?",
+      "alternativas": ["Uma estátua do dragão Villentretenmerth banhada a ouro.", "O carro Rayfield Caliburn de Cyberpunk 2077 coberto por um pano.", "Uma foto emoldurada de toda a equipe de desenvolvimento colocada em um cavalete de pintura.", "Uma espada fincada na pedra com as iniciais de Geralt e Yennefer.", "Um chalé com Ciri jogando Gwent contra um Lynx."],
+      "resposta_correta": 2,
+      "explicacao": "Gabarito oficial: Foto emoldurada da equipe de desenvolvimento em um cavalete no topo da montanha."
+    },
+    {
+      "id": "d7",
+      "pergunta": "Nas profundezas subterrâneas de Blackreach em The Elder Scrolls V: Skyrim, existe um chefe secreto chamado Vulthuryol. Como o jogador pode invocá-lo?",
+      "alternativas": ["Colocando um crânio de gigante em um trono de gelo.", "Utilizando o grito Unrelenting Force (Fus Ro Dah) na grande esfera alaranjada/sol artificial suspensa no teto.", "Derramando sangue de Falmer no altar central do local.", "Coletando 30 Crimson Nirnroots e entregando no laboratório de Sinderion.", "Ativando 5 alavancas na ordem correta em menos de 10 segundos."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Usar o grito Fus Ro Dah no sol artificial de Blackreach."
+    },
+    {
+      "id": "d8",
+      "pergunta": "Cerca de 3 anos e meio após o lançamento de NieR: Automata, o modder Lance McDonald descobriu o \"último segredo\" do jogo programado por Yoko Taro. O que esse cheat secreto faz ao ser executado em um local específico logo após o primeiro chefe?",
+      "alternativas": ["Desbloqueia uma rota de história jogável inédita com o personagem Emil.", "Transforma a 2B em um robô Stubby com atributos no máximo.", "Pula o jogo inteiro direto para o Final E e desbloqueia o seletor de capítulos e modos bônus imediatamente.", "Altera toda a trilha sonora para as músicas do NieR Replicant original de PS3.", "Exibe um vídeo secreto em live-action de Yoko Taro agradecendo os jogadores."],
+      "resposta_correta": 2,
+      "explicacao": "Gabarito oficial: Cheat que pula do primeiro chefe direto para o Final E e libera seletores de capítulos."
+    },
+    {
+      "id": "d9",
+      "pergunta": "A comunidade de Half-Life 2 descobriu anos depois que a textura do rosto do famoso modelo de cadáver queimado (corpse01.mdl) usada no jogo tinha uma origem impressionante no mundo real. Qual era essa origem?",
+      "alternativas": ["O rosto do próprio Gabe Newell escaneado com maquiagem e edição digital.", "Uma foto real de um cadáver queimado retirada de um livro didático de patologia forense.", "Uma foto de uma escultura de cera derretida feita pelo artista da Valve.", "Um fotograma de um filme de horror de baixo orçamento dos anos 80.", "Um conceito descartado para a criatura Nemesis de Resident Evil."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Textura adaptada de uma foto médica real de um livro de patologia forense."
+    },
+    {
+      "id": "d10",
+      "pergunta": "No Famicom Disk System (versão japonesa em disco de Super Mario Bros.), o famoso glitch do \"World -1\" (Minus World) funciona de forma diferente da versão em cartucho do NES/Famicom tradicional. O que acontece ao entrar no World -1 na versão FDS?",
+      "alternativas": ["É uma fase idêntica à 1-1, mas com a tela completamente invertida de ponta-cabeça.", "O jogo congela imediatamente e toca a música de vitória em loop.", "É uma fase aquática com Peach e Bowser no fundo, que ao ser concluída leva o jogador para o World -2 e World -3.", "O jogador é levado direto para o castelo final 8-4 com 99 vidas.", "O jogo se transforma em uma fase de castelo sem saída e sem cronômetro."],
+      "resposta_correta": 2,
+      "explicacao": "Gabarito oficial: Fase aquática com Peach/Bowser que permite avançar para os Mundos -2 e -3."
+    },
+    {
+      "id": "d11",
+      "pergunta": "Se o jogador salvar o jogo e recarregar enquanto estiver preso na cela da prisão de Groznyj Grad em Metal Gear Solid 3: Snake Eater, qual minigame secreto de pesadelo é iniciado?",
+      "alternativas": ["Um minigame de hack-and-slash em preto e branco com monstros de lâmina chamado Guy Savage.", "Um jogo estilo arcade de nave em 2D chamado Star Soldier.", "Uma versão adaptada em 8-bits do primeiro Metal Gear de MSX.", "Um simulador de pesca no pântano soviético.", "Um duelo de tiro ao alvo em primeira pessoa contra Revolver Ocelot."],
+      "resposta_correta": 0,
+      "explicacao": "Gabarito oficial: Minigame de ação e terror em preto e branco Guy Savage."
+    },
+    {
+      "id": "d12",
+      "pergunta": "Em Grand Theft Auto V, o que acontece se o jogador discar o número de telefone 1-999-367-3767 (1-999-EMPEROR-DROP / Black Cellphones) no celular de qualquer um dos três protagonistas?",
+      "alternativas": ["Faz chover carros esportivos no topo do Mount Chiliad.", "Uma pequena explosão acontece no céu acima do jogador e o tema visual do celular muda permanentemente para preto.", "Invoca um OVNI funcional na praia de Vespucci.", "Desbloqueia o traje de agente do FBI para Michael, Franklin e Trevor.", "Adiciona R$ 1.000.000 instantaneamente à conta bancária."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Explosão no céu e alteração do tema do celular para a cor preta."
+    },
+    {
+      "id": "d13",
+      "pergunta": "Em Halo 3, se o jogador ajustar a data do console Xbox 360 para 5 de maio (aniversário da esposa de um dos desenvolvedores) e pressionar ambos os analógicos durante a tela de carregamento, qual mensagem secreta aparece gravada no anel de Halo?",
+      "alternativas": ["\"Bungie Loves You\"", "\"Happy Birthday Lauren!\"", "\"Remember Reach\"", "\"Master Chief was here\"", "\"Finish the Fight\""],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Mensagem \"Happy Birthday Lauren!\" no anel de Halo no dia 5 de maio."
+    },
+    {
+      "id": "d14",
+      "pergunta": "No clássico Deus Ex (2000), o que acontece se o jogador, controlando JC Denton, entrar repetidamente no banheiro feminino da sede da UNATCO durante o capítulo de introdução?",
+      "alternativas": ["A porta se tranca e o alarme da base é acionado por intrusão.", "O chefe Joseph Manderley envia um e-mail reprimindo JC Denton por conduta inadequada no ambiente de trabalho.", "Shannon O'Neal ataca o jogador por violação de privacidade.", "O jogador ganha 500 pontos de habilidade por comportamento insubordinado.", "O jogo exibe a tela de Game Over por demissão por justa causa."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: E-mail de reprimenda do chefe Joseph Manderley por conduta inadequada no banheiro."
+    },
+    {
+      "id": "d15",
+      "pergunta": "Em Shadow of the Colossus (PS2), o que acontece com os atributos do personagem Wander se ele conseguir subir ao Jardim Secreto no topo do Templo da Adoração e comer os frutos que lá crescem?",
+      "alternativas": ["Sua barra de vida e sua estamina máxima aumentam consideravelmente.", "Sua vida e sua estamina máxima são reduzidas.", "Sua espada passa a causar o dobro de dano em qualquer colosso.", "Ele ganha a habilidade de voar temporariamente.", "Ele fica imune a qualquer dano de queda."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Os frutos do Jardim Secreto reduzem a vida e estamina máximas de Wander."
+    },
+    {
+      "id": "d16",
+      "pergunta": "No Capítulo 6 de Portal 2, ao levar um rádio até uma toca secreta do Ratman e capturar o sinal de áudio emitido, o que é revelado se você decodificar esse arquivo de áudio usando um software de SSTV (Slow-Scan Television)?",
+      "alternativas": ["As coordenadas geográficas da instalação fictícia da Aperture Science.", "Uma imagem em preto e branco de um Companion Cube na superfície da Lua.", "O esquema técnico original do Portal Gun de 1970.", "Uma mensagem revelando que GLaDOS é a mãe de Chell.", "Um registro em áudio de Cave Johnson declarando falência."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Imagem via SSTV de um Companion Cube na superfície da Lua."
+    },
+    {
+      "id": "d17",
+      "pergunta": "Em Red Dead Redemption 2, existe um diálogo secreto com uma entidade/criatura oculta dentro de uma caverna montanhosa em Ambarino (atrás de uma rocha). Que criatura é essa e o que ela diz?",
+      "alternativas": ["O Diabo, que tenta comprar a alma de Arthur Morgan.", "Um Gigante / Bigfoot solitário, que afirma ser grande demais para o mundo.", "O Strange Man, que prevê a morte dos membros da gangue de Dutch.", "Uma bruxa que oferece poções para aumentar a vida máxima.", "Um alienígena cinzento que perdeu sua nave espacial."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Um Gigante / Bigfoot escondido na caverna."
+    },
+    {
+      "id": "d18",
+      "pergunta": "No famoso segredo \"Overdrill\" do assalto First World Bank em Payday 2, quanto tempo a furadeira especial precisa operar ininterruptamente e quantos sacos de ouro o cofre secreto contém?",
+      "alternativas": ["500 segundos / 20 sacos de ouro", "1.000 segundos / 40 sacos de ouro", "2.000 segundos (33 minutos e 20 segundos) / 80 sacos de ouro", "3.600 segundos (1 hora) / 100 sacos de ouro", "7.200 segundos (2 horas) / 150 sacos de ouro"],
+      "resposta_correta": 2,
+      "explicacao": "Gabarito oficial: 2.000 segundos de espera e 80 sacos de ouro no cofre."
+    },
+    {
+      "id": "d19",
+      "pergunta": "No chefe final \"Icon of Sin\" em Doom II, ao iniciar a batalha é tocado um áudio demoníaco distorcido. Ao reproduzir esse áudio ao contrário, qual é a mensagem dita pela voz de John Romero?",
+      "alternativas": ["\"To win the game, you must kill me, John Romero.\"", "\"You shall not pass into the realm of darkness.\"", "\"Welcome to hell, space marine.\"", "\"Id software will reign forever.\"", "\"Rip and tear until it is done.\""],
+      "resposta_correta": 0,
+      "explicacao": "Gabarito oficial: \"To win the game, you must kill me, John Romero.\""
+    },
+    {
+      "id": "d20",
+      "pergunta": "Ao derrotar o chefe final Lavos no início do jogo em um New Game+ de Chrono Trigger (acessando pelo Telepod), o jogador desbloqueia o final \"Developer's Room\". O que o jogador encontra nessa sala?",
+      "alternativas": ["Uma arena de batalha contra Akira Toriyama desenhado em 8-bits.", "Sprites dos próprios desenvolvedores (Hironobu Sakaguchi, Yuji Horii, Akira Toriyama etc.) conversando e fazendo piadas com o jogador.", "Um museu com todas as artes conceituais descartadas do projeto.", "Um teste de som contendo todas as trilhas sonoras e efeitos de áudio.", "Uma demonstração da engine de Chrono Cross rodando no SNES."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Sala com os desenvolvedores da Dream Team em sprites 16-bits conversando com o jogador."
+    },
+    {
+      "id": "d21",
+      "pergunta": "Em World of Warcraft, qual é o nome da assustadora e infame subzona não instanciada e inacessível localizada abaixo das Criptas de Karazhan, famosa por ter corpos de humanos afogados e pendurados de ponta-cabeça?",
+      "alternativas": ["The Forgotten Tombs", "Upside-Down Sinners (Pecadores de Cabeça para Baixo) / The Criminal Pit", "The Drowned Cellar", "The Whispering Depths", "The Catacombs of Atiesh"],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Upside-Down Sinners / Criptas de Karazhan."
+    },
+    {
+      "id": "d22",
+      "pergunta": "Em The Legend of Zelda: Ocarina of Time, que detalhe bizarro pode ser visto no fundo da água do laboratório do Lago Hylia (Lake Hylia Lab) se o jogador usar a Zora Tunic e os Iron Boots para afundar até a grade inferior?",
+      "alternativas": ["O esqueleto de um Lynel gigante.", "A máscara de Majora congelada em um bloco de gelo.", "Um tubarão preso dentro de uma gaiola metálica.", "Uma garrafa com uma foto dos desenvolvedores da Nintendo.", "O escudo de madeira original de A Link to the Past."],
+      "resposta_correta": 2,
+      "explicacao": "Gabarito oficial: Um tubarão preso dentro de uma gaiola metálica no fundo da piscina do laboratório."
+    },
+    {
+      "id": "d23",
+      "pergunta": "Em Dark Souls, a criatura raríssima chamada Vagrant pode aparecer aleatoriamente no mundo do jogador. Como esse inimigo especial é gerado no jogo?",
+      "alternativas": ["Quando outro jogador morre e perde mais de 1.000.000 de Almas sem recuperar a mancha de sangue.", "Quando outro jogador dropa certos itens valiosos ou morre carregando uma grande quantidade de Humanidades em seu próprio jogo.", "Quando um jogador falha 5 vezes seguidas ao tentar invadir outro mundo com a Red Eye Orb.", "Sempre que um chefe de área é derrotado sem sofrer nenhum dano.", "Quando o jogador mata um NPC aliado acidentalmente."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Gerado pelo acúmulo de humanidades/itens abandonados que trafegam online entre mundos."
+    },
+    {
+      "id": "d24",
+      "pergunta": "Qual era o nome do dróide astromecânico T3-M4 durante o desenvolvimento inicial de Star Wars: Knights of the Old Republic, e por que ele precisou ser renomeado?",
+      "alternativas": ["Era chamado de T3-P0, mas foi renomeado pois a pronúncia em inglês soava idêntica a \"C-3PO\".", "Era chamado de C4-P0, alterado devido à semelhança com a palavra \"Capô\".", "Era chamado de 3C-PO, alterado por razões de marca registrada direta.", "Era chamado de R2-D3, alterado por pedido direto de George Lucas.", "Era chamado de BEEP-1, descartado por ser considerado genérico demais."],
+      "resposta_correta": 0,
+      "explicacao": "Gabarito oficial: T3-P0, alterado para não soar idêntico ao C-3PO em inglês."
+    },
+    {
+      "id": "d25",
+      "pergunta": "Em Super Smash Bros. Melee (GameCube), existe um glitch que permite ao jogador controlar o chefe não jogável Master Hand na tela de seleção de personagens no modo VS. Como esse glitch é ativado?",
+      "alternativas": ["Inserindo o código Konami no controle 3 durante a tela de abertura.", "Conectando o controle na porta 3, não selecionando nenhum personagem, escolhendo \"Name Entry\" e segurando A ao cancelar no momento exato.", "Zerando o Classic Mode na dificuldade Very Hard sem perder vidas usando a Zelda.", "Desconectando o controle da porta 4 quando o cronômetro da partida chegar a 00:00.", "Pausando o jogo no frame exato da explosão do Master Hand e pressionando L+R+A+Start."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Glitch do slot 3 de controle no Name Entry da tela de seleção de personagem."
+    },
+    {
+      "id": "d26",
+      "pergunta": "Na versão Java Beta de Minecraft, qual detalhe curioso existia na textura do bloco de Arenito Talhado (Chiseled Sandstone)?",
+      "alternativas": ["O rosto do criador Notch desenhado de perfil.", "O rosto estilizado de um Creeper esculpido na frente do bloco.", "A palavra \"HEROBRINE\" gravada em letras minúsculas.", "As iniciais de toda a equipe original da Mojang.", "O logo original da Notch Enterprises."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Rosto gravado de um Creeper no bloco de arenito talhado."
+    },
+    {
+      "id": "d27",
+      "pergunta": "Qual foi a principal inspiração da equipe da Capcom para criar a animação do golpe especial Hadoken de Ryu e Ken em Street Fighter II?",
+      "alternativas": ["A onda de energia do golpe \"Kamehameha\" de Dragon Ball.", "O canhão de ondas de energia do couraçado do anime Space Battleship Yamato (Patrulha Estelar).", "Uma falha na animação do soco forte que os desenvolvedores decidiram manter.", "Movimentos reais de arremesso de facas das artes marciais chinesas.", "A animação do ataque principal de Mega Man."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Inspirado no canhão de ondas do anime Space Battleship Yamato."
+    },
+    {
+      "id": "d28",
+      "pergunta": "No menu principal de Call of Duty: Black Ops (2010), onde Alex Mason está preso em uma cadeira de interrogatório, o que o jogador deve fazer para se libertar da cadeira e caminhar livremente pela sala até um terminal de computador secreto?",
+      "alternativas": ["Segurar o botão de corrida por 10 segundos ininterruptos.", "Apertar repetidamente os botões de gatilho/ombro (L2/R2 ou LT/RT no controle) até arrebentar as algemas.", "Digitar a senha \"3PAC\" no teclado do console.", "Ficar 15 minutos sem encostar em nenhum botão do controle.", "Pressionar a sequência Start, Select, X, Quadrado 3 vezes."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Pressionar repetidamente os botões de gatilho L2/R2 para arrebentar as algemas."
+    },
+    {
+      "id": "d29",
+      "pergunta": "Meses antes de The Last of Us ser anunciado publicamente pela Naughty Dog, qual easter egg sutil sobre o jogo foi inserido na fase do bar em Londres em Uncharted 3: Drake's Deception?",
+      "alternativas": ["Um cartaz de \"Pessoas Desaparecidas\" com fotos de Joel e Ellie.", "Uma manchete de jornal em cima do balcão que dizia: \"Scientists still struggle to understand deadly fungus\" (\"Cientistas ainda lutam para entender fungo mortal\").", "O logotipo do grupo Fireflies desenhado com tinta spray no banheiro do bar.", "Um panfleto prometendo a cura para uma infecção cerebral.", "O tema musical principal do jogo tocando na rádio do bar."],
+      "resposta_correta": 1,
+      "explicacao": "Gabarito oficial: Jornal sobre fungos mortais em cima do balcão do bar em Londres."
+    },
+    {
+      "id": "d30",
+      "pergunta": "Em Bloodborne, ao utilizar o item Small Music Box (Caixinha de Música) durante a luta contra o chefe Father Gascoigne, qual é o efeito mecânico e a explicação narrativa por trás disso?",
+      "alternativas": ["Gascoigne fica atordoado e se contorce por alguns segundos porque a melodia traz memórias de sua família, mas usar o item mais de 3 vezes acelera sua transformação em fera.", "Ele recupera toda a vida e ganha ataques elétricos devido à fúria.", "Ele para de atacar imediatamente e se rende, permitindo que o jogador o poupe.", "A caixinha invoca a alma de sua esposa morta para lutar ao lado do Caçador.", "Gascoigne fica cego por 10 segundos devido às alucinações sonoras da caixinha."],
+      "resposta_correta": 0,
+      "explicacao": "Gabarito oficial: Atordoa Gascoigne por lembranças familiares, mas acelera a transformação de fera se usado demais."
+    }
+  ]
+}
